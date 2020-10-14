@@ -1,2 +1,2 @@
-![](src\main\resources) 
+![](src\main\resources\logo.png) 
 Welcome to the TugaFlavours repository.
