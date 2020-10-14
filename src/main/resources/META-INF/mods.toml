@@ -18,7 +18,7 @@ updateJSONURL="https://github.com/pmso/TugaFlavours" #optional
 
 displayURL="https://github.com/pmso/TugaFlavours/wiki" #optional
 
-logoFile="examplemod.png" #optional
+logoFile="logo.png" #optional
 
 credits="Pmso" #optional
 

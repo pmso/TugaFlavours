@@ -20,7 +20,7 @@ public class RegistryHandler  {
 	}
 	
 	//Items
-	public static final RegistryObject<Item> CHEESE=ITEMS.register("cheese", ItemBase::new);
+	public static final RegistryObject<Item> CORK=ITEMS.register("cork", ItemBase::new);
 	
 	
 	
