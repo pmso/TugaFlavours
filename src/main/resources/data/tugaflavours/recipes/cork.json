@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients":
+  [
+    {"item": "tugaflavours:cork_block"}
+  ],
+  "result":
+  {
+    "item": "tugaflavours:cork",
+    "count": 9
+  }
+}

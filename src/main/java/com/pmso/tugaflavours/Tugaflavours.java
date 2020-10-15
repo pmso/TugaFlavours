@@ -2,18 +2,18 @@ package com.pmso.tugaflavours;
 
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
-import java.util.Comparator;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.pmso.tugaflavours.util.RegistryHandler;
+import com.pmso.tugaflavours.init.ModBlocks;
+import com.pmso.tugaflavours.init.ModItems;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod("tugaflavours")
@@ -29,7 +29,8 @@ public class Tugaflavours
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
         
-        RegistryHandler.init();
+        ModItems.init();
+        ModBlocks.init();
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -48,7 +49,7 @@ public class Tugaflavours
 		
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RegistryHandler.TUGA_COD.get());
+			return new ItemStack(ModItems.TUGA_COD.get());
 		}
 	};
 }
