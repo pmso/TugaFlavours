@@ -1,3 +1,7 @@
 {
-"item.tugaflavours.cheese":"Cheese"
+"itemGroup.tugaFlavoursTab":"Tuga Flavours",
+"item.tugaflavours.cork":"Cork",
+"item.tugaflavours.dried_cod":"Dried Cod",
+"item.tugaflavours.tuga_cod":"Portugal's Bacalhau",
+"block.tugaflavours.cork_block":"Cork Block"
 }
