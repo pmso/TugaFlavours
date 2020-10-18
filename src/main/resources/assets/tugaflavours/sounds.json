@@ -1,0 +1,12 @@
+{
+	"disc.hino":{
+		"category":"disc",
+		"subtitle":"hino",
+		"sounds":[
+			{
+				"name":"tugaflavours:disc/hino",
+				"stream":true
+			}
+		]
+	}
+}

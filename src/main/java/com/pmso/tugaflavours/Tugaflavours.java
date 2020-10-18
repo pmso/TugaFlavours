@@ -12,6 +12,7 @@ import org.apache.logging.log4j.Logger;
 
 import com.pmso.tugaflavours.init.ModBlocks;
 import com.pmso.tugaflavours.init.ModItems;
+import com.pmso.tugaflavours.init.ModSounds;
 import com.pmso.tugaflavours.util.TugaFlavoursTabs;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -28,6 +29,7 @@ public class Tugaflavours
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
         
+        ModSounds.init();
         ModItems.init();
         ModBlocks.init();
 

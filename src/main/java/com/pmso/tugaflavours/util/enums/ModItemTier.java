@@ -1,4 +1,4 @@
-package com.pmso.tugaflavours.client.tools;
+package com.pmso.tugaflavours.util.enums;
 
 import java.util.function.Supplier;
 

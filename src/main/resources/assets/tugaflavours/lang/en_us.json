@@ -1,14 +1,26 @@
 {
 "itemGroup.tugaFlavoursTab":"Tuga Flavours",
+
 "item.tugaflavours.cork":"Cork",
+"block.tugaflavours.cork_block":"Cork Block",
+
 "item.tugaflavours.dried_cod":"Dried Cod",
 "item.tugaflavours.tuga_cod":"Portugal's Bacalhau",
-"block.tugaflavours.cork_block":"Cork Block",
+
 "block.tugaflavours.dish_block":"Dish",
 "block.tugaflavours.francesinha_block":"Francesinha",
+
 "item.tugaflavours.cork_sword":"Cork Sword",
 "item.tugaflavours.cork_axe":"Cork Axe",
 "item.tugaflavours.cork_pickaxe":"Cork Pickaxe",
 "item.tugaflavours.cork_shovel":"Cork Shovel",
-"item.tugaflavours.cork_hoe":"Cork Hoe"
+"item.tugaflavours.cork_hoe":"Cork Hoe",
+
+"item.tugaflavours.cork_helmet":"Cork Helmet",
+"item.tugaflavours.cork_chestplate":"Cork Chestplate",
+"item.tugaflavours.cork_leggings":"Cork Leggings",
+"item.tugaflavours.cork_boots":"Cork Boots",
+
+"item.tugaflavours.hino_disc":"Music Disc",
+"item.tugaflavours.hino_disc.desc":"A Portuguesa"
 }
