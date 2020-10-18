@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "tugaflavours:dish_block" },
+    "facing=south": { "model": "tugaflavours:dish_block", "y":  180},
+    "facing=west": { "model": "tugaflavours:dish_block", "y":  270},
+    "facing=east": { "model": "tugaflavours:dish_block", "y":  90}
+  }
+}

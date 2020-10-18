@@ -1,8 +1,6 @@
 package com.pmso.tugaflavours;
 
 import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -14,6 +12,7 @@ import org.apache.logging.log4j.Logger;
 
 import com.pmso.tugaflavours.init.ModBlocks;
 import com.pmso.tugaflavours.init.ModItems;
+import com.pmso.tugaflavours.util.TugaFlavoursTabs;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod("tugaflavours")
@@ -45,11 +44,5 @@ public class Tugaflavours
         // do something that can only be done on the client
     }
 
-    public static final ItemGroup TAB= new ItemGroup("tugaFlavoursTab") {
-		
-		@Override
-		public ItemStack createIcon() {
-			return new ItemStack(ModItems.TUGA_COD.get());
-		}
-	};
+    public static final ItemGroup TAB= new TugaFlavoursTabs();
 }

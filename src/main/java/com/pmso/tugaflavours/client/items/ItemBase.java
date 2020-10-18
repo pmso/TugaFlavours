@@ -7,8 +7,10 @@ import net.minecraft.item.ItemGroup;
 
 public class ItemBase extends Item{
 
+	private int tabOrder;
+	
 	public ItemBase() {
-		super(new Item.Properties().group(Tugaflavours.TAB));//Mudar depois para um itemgroup custom
+		super(new Item.Properties().group(Tugaflavours.TAB));
 	}
 
 }

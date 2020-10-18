@@ -1,0 +1,89 @@
+{
+    "textures": {
+        "0": "tugaflavours:blocks/top_down_plate",
+        "1": "tugaflavours:blocks/molho",
+        "2": "tugaflavours:blocks/side_plate",
+        "3": "tugaflavours:blocks/francesinha",
+        "particle":"tugaflavours:blocks/top_down_plate"
+    },
+    "elements": [
+        {
+            "name": "Dish_base",
+            "from": [ 3.0, 0.0, 3.0 ], 
+            "to": [ 13.0, 1.0, 13.0 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 10.0, 1.0 ] },
+                "east": { "texture": "#0", "uv": [ 0.0, 0.0, 3.0, 4.0 ] },
+                "south": { "texture": "#0", "uv": [ 0.0, 0.0, 10.0, 1.0 ] },
+                "west": { "texture": "#0", "uv": [ 0.0, 0.0, 10.0, 1.0 ] },
+                "up": { "texture": "#1", "uv": [ 0.0, 0.0, 10.0, 10.0 ] },
+                "down": { "texture": "#2", "uv": [ 0.0, 0.0, 10.0, 10.0 ] }
+            }
+        },
+        {
+            "name": "Dish_2Layer_Left",
+            "from": [ 2.0, 1.0, 1.0 ], 
+            "to": [ 14.0, 2.0, 3.0 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 12.0, 1.0 ] },
+                "east": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 1.0 ] },
+                "south": { "texture": "#0", "uv": [ 0.0, 0.0, 12.0, 1.0 ] },
+                "west": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 1.0 ] },
+                "up": { "texture": "#0", "uv": [ 0.0, 0.0, 12.0, 2.0 ] },
+                "down": { "texture": "#0", "uv": [ 0.0, 0.0, 12.0, 2.0 ] }
+            }
+        },
+        {
+            "name": "Dish_2LayerDown",
+            "from": [ 1.0, 1.0, 3.0 ], 
+            "to": [ 3.0, 2.0, 14.0 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 1.0 ] },
+                "east": { "texture": "#0", "uv": [ 0.0, 0.0, 11.0, 1.0 ] },
+                "south": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 1.0 ] },
+                "west": { "texture": "#0", "uv": [ 0.0, 0.0, 11.0, 1.0 ] },
+                "up": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 11.0 ] },
+                "down": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 11.0 ] }
+            }
+        },
+        {
+            "name": "Dish_2LayerRight",
+            "from": [ 2.0, 1.0, 13.0 ], 
+            "to": [ 14.0, 2.0, 15.0 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 12.0, 1.0 ] },
+                "east": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 1.0 ] },
+                "south": { "texture": "#0", "uv": [ 0.0, 0.0, 12.0, 1.0 ] },
+                "west": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 1.0 ] },
+                "up": { "texture": "#0", "uv": [ 0.0, 0.0, 12.0, 2.0 ] },
+                "down": { "texture": "#0", "uv": [ 0.0, 0.0, 12.0, 2.0 ] }
+            }
+        },
+        {
+            "name": "Dish_2Layer_Up",
+            "from": [ 13.0, 1.0, 2.0 ], 
+            "to": [ 15.0, 2.0, 14.0 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 1.0 ] },
+                "east": { "texture": "#0", "uv": [ 0.0, 0.0, 12.0, 1.0 ] },
+                "south": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 1.0 ] },
+                "west": { "texture": "#0", "uv": [ 0.0, 0.0, 12.0, 1.0 ] },
+                "up": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 12.0 ] },
+                "down": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 12.0 ] }
+            }
+        },
+        {
+            "name": "Cube",
+            "from": [ 4.0, 1.0, 4.0 ], 
+            "to": [ 12.0, 4.0, 12.0 ], 
+            "faces": {
+                "north": { "texture": "#3", "uv": [ 0.0, 0.0, 8.0, 3.0 ] },
+                "east": { "texture": "#3", "uv": [ 0.0, 0.0, 8.0, 3.0 ] },
+                "south": { "texture": "#3", "uv": [ 0.0, 0.0, 8.0, 3.0 ] },
+                "west": { "texture": "#3", "uv": [ 0.0, 0.0, 8.0, 3.0 ] },
+                "up": { "texture": "#3", "uv": [ 0.0, 0.0, 8.0, 8.0 ] },
+                "down": { "texture": "#3", "uv": [ 0.0, 0.0, 8.0, 8.0 ] }
+            }
+        }
+    ]
+}

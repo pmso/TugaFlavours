@@ -12,6 +12,7 @@ public class CorkBlock extends Block{
 				.sound(SoundType.CLOTH)
 				.harvestLevel(1)
 				.harvestTool(ToolType.AXE)
+				.setRequiresTool()
 				);
 	}
 

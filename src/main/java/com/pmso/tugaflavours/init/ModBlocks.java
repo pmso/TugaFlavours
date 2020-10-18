@@ -19,4 +19,8 @@ public static final DeferredRegister<Block> BLOCKS= DeferredRegister.create(Forg
 
 	//Blocks
 	public static final RegistryObject<Block> CORK_BLOCK=BLOCKS.register("cork_block", CorkBlock::new);
+	
+	public static final RegistryObject<Block> DISH_BLOCK=BLOCKS.register("dish_block", CorkBlock::new);
+	
+	public static final RegistryObject<Block> FRANCESINHA_BLOCK=BLOCKS.register("francesinha_block", CorkBlock::new);
 }
