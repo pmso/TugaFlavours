@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "ccc",
+    "c c",
+    "c c"
+  ],
+  "key":
+  {
+    "c":
+    {
+      "item": "tugaflavours:cork"
+    }
+  },
+  "result":
+  {
+    "item": "tugaflavours:cork_leggings",
+    "count": 1
+  }
+}
