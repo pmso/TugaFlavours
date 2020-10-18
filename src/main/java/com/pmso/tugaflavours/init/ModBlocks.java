@@ -2,6 +2,8 @@ package com.pmso.tugaflavours.init;
 
 import com.pmso.tugaflavours.Tugaflavours;
 import com.pmso.tugaflavours.client.blocks.CorkBlock;
+import com.pmso.tugaflavours.client.blocks.DishBlock;
+import com.pmso.tugaflavours.client.blocks.FrancesinhaBlock;
 
 import net.minecraft.block.Block;
 import net.minecraftforge.fml.RegistryObject;
@@ -20,7 +22,7 @@ public static final DeferredRegister<Block> BLOCKS= DeferredRegister.create(Forg
 	//Blocks
 	public static final RegistryObject<Block> CORK_BLOCK=BLOCKS.register("cork_block", CorkBlock::new);
 	
-	public static final RegistryObject<Block> DISH_BLOCK=BLOCKS.register("dish_block", CorkBlock::new);
+	public static final RegistryObject<Block> DISH_BLOCK=BLOCKS.register("dish_block", DishBlock::new);
 	
-	public static final RegistryObject<Block> FRANCESINHA_BLOCK=BLOCKS.register("francesinha_block", CorkBlock::new);
+	public static final RegistryObject<Block> FRANCESINHA_BLOCK=BLOCKS.register("francesinha_block", FrancesinhaBlock::new);
 }

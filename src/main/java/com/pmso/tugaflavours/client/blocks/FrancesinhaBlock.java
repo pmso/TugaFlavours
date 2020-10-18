@@ -10,6 +10,7 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.gui.ChatLine;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResultType;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
@@ -42,21 +43,18 @@ public class FrancesinhaBlock extends Block{
 				.sound(SoundType.GLASS)
 				.notSolid()
 				.harvestLevel(1));
+		
 	}
 
 	    
     @Override
     public ActionResultType onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit)
     {
+    	if (worldIn.isRemote) {
+               return ActionResultType.SUCCESS;
+         }
         this.eatFrancesinha(worldIn, pos, state, player);
-        return ActionResultType.CONSUME;
-    }
-
-    @Override
-    public void onBlockClicked(BlockState state, World worldIn, BlockPos pos, PlayerEntity player)
-    {
-    	player.sendMessage(TextComponentUtils.getDisplayName(player.getGameProfile()), player.getUniqueID());
-        this.eatFrancesinha(worldIn, pos, worldIn.getBlockState(pos), player);
+        return ActionResultType.SUCCESS;
     }
     
     @Override
@@ -71,27 +69,19 @@ public class FrancesinhaBlock extends Block{
     	return NORTH;
     }
     
-    @Override
-    public VoxelShape getRenderShape(BlockState state, IBlockReader worldIn, BlockPos pos) {
-    	// TODO Auto-generated method stub
-    	return NORTH;
-    }
-    
     private void eatFrancesinha(World worldIn, BlockPos pos, BlockState state, PlayerEntity player)
     {
         if (player.canEat(false))
         {
-            player.getFoodStats().addStats(20, 1.5F);
-                worldIn.setBlockState(pos, ModBlocks.DISH_BLOCK.get().getDefaultState());
-                //player.addChatMessage(new ChatComponentText(player.getName()+" eat a big francesinha!"));
-                /*double rand=Math.random()*100;
-                if(rand<20){
-                	player.setFire(3);
-                	player.addChatMessage(new ChatComponentText(player.getName()+" eat a very spicy francesinha!"));
-                }*/
+            player.getFoodStats().addStats(18, 1.5F);
+            worldIn.setBlockState(pos, ModBlocks.DISH_BLOCK.get().getDefaultState());
         }
     }
     
-    
+    /**Change the block shadow -- Lower return values = more shadow*/
+    @Override
+    public float getAmbientOcclusionLightValue(BlockState state, IBlockReader worldIn, BlockPos pos) {
+        return 0.6F;
+    }
    
 }
