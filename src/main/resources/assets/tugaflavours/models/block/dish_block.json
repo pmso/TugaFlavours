@@ -73,6 +73,10 @@
 			"translation": [-3.25, 1.25, -0.25],
 			"scale": [0.5, 0.5, 0.5]
 		},
+		"firstperson_righthand": {
+			"rotation": [0, 0, 90],
+			"translation": [0, -4, 0]
+		},
 		"ground": {
 			"translation": [0, 5.5, 0]
 		},
