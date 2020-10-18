@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " c ",
+    " s ",
+    " s "
+  ],
+  "key":
+  {
+    "c":
+    {
+      "item": "tugaflavours:cork"
+    },
+    "s":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+  "result":
+  {
+    "item": "tugaflavours:cork_shovel",
+    "count": 1
+  }
+}

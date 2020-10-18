@@ -1,5 +1,7 @@
 package com.pmso.tugaflavours.client.blocks;
 
+import java.util.stream.Stream;
+
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItemUseContext;
@@ -15,11 +17,19 @@ import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraft.world.IBlockReader;
 import net.minecraftforge.common.ToolType;
 
-public class BlockDish extends Block{
+public class DishBlock extends Block{
 
 	private static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
 	
-	public BlockDish() {
+	private VoxelShape SHAPE_N=Stream.of(
+			Block.makeCuboidShape(3, 0, 3, 13, 1, 13),
+			Block.makeCuboidShape(2, 1, 1, 14, 2, 3),
+			Block.makeCuboidShape(1, 1, 3, 3, 2, 14),
+			Block.makeCuboidShape(2, 1, 13, 14, 2, 15),
+			Block.makeCuboidShape(13, 1, 2, 15, 2, 14)
+			).reduce((v1, v2) -> {return VoxelShapes.combineAndSimplify(v1, v2, IBooleanFunction.OR);}).get();
+	
+	public DishBlock() {
 		super(Block.Properties.create(Material.CAKE)
 				.hardnessAndResistance(0.25f,3.0f)
 				.sound(SoundType.GLASS)
@@ -32,21 +42,21 @@ public class BlockDish extends Block{
         return this.getDefaultState().with(FACING, context.getPlacementHorizontalFacing().getOpposite());
     }
 
-    /*@Override
+    @Override
     public VoxelShape getShape(BlockState state, IBlockReader worldIn, BlockPos pos, ISelectionContext context) {
         switch (state.get(FACING)) {
             case NORTH:
                 return SHAPE_N;
-            case SOUTH:
+            /*case SOUTH:
                 return SHAPE_S;
             case EAST:
                 return SHAPE_E;
             case WEST:
-                return SHAPE_W;
+                return SHAPE_W;*/
             default:
                 return SHAPE_N;
         }
-    }*/
+    }
 
     @Override
     public BlockState rotate(BlockState state, Rotation rot) {

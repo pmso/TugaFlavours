@@ -5,16 +5,21 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.gui.ChatLine;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.ActionResultType;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.BlockRayTraceResult;
+import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.TextComponentUtils;
 import net.minecraft.world.World;
+import net.minecraftforge.client.event.ClientChatEvent;
+import net.minecraftforge.client.event.RenderGameOverlayEvent.Chat;
 
-public class BlockFrancesinha extends Block{
+public class FrancesinhaBlock extends Block{
 
-	public BlockFrancesinha() {
+	public FrancesinhaBlock() {
 		super(Block.Properties.create(Material.CAKE)
 				.hardnessAndResistance(0.25f,3.0f)
 				.sound(SoundType.GLASS)
@@ -32,7 +37,8 @@ public class BlockFrancesinha extends Block{
     @Override
     public void onBlockClicked(BlockState state, World worldIn, BlockPos pos, PlayerEntity player)
     {
-        //this.eatFrancesinha(worldIn, pos, worldIn.getBlockState(pos), playerIn);
+    	player.sendMessage(TextComponentUtils.getDisplayName(player.getGameProfile()), player.getUniqueID());
+        this.eatFrancesinha(worldIn, pos, worldIn.getBlockState(pos), player);
     }
     
     private void eatFrancesinha(World worldIn, BlockPos pos, BlockState state, PlayerEntity player)

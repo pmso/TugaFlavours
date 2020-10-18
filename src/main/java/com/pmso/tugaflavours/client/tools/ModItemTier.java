@@ -9,7 +9,7 @@ import net.minecraft.item.crafting.Ingredient;
 
 public enum ModItemTier implements IItemTier {
 	CORK(0, 64, 1.5f, -1.0f, 15, () -> {
-		return Ingredient.fromItems(ModItems.CORK_SWORD.get());
+		return Ingredient.fromItems(ModItems.CORK.get());
 	});
 
 	private final int harvestLevel;
