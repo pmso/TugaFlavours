@@ -39,11 +39,10 @@ public class FrancesinhaBlock extends Block{
 	
 	public FrancesinhaBlock() {
 		super(Block.Properties.create(Material.CAKE)
-				.hardnessAndResistance(0.25f,3.0f)
+				.zeroHardnessAndResistance()
 				.sound(SoundType.GLASS)
 				.notSolid()
 				.harvestLevel(1));
-		
 	}
 
 	    

@@ -23,6 +23,7 @@ public class Tugaflavours
     private static final Logger LOGGER = LogManager.getLogger();
     
     public static final String MOD_ID="tugaflavours";
+    public static final ItemGroup TAB= new TugaFlavoursTabs();
 
     public Tugaflavours() {
         // Register the setup method for modloading
@@ -46,5 +47,4 @@ public class Tugaflavours
         // do something that can only be done on the client
     }
 
-    public static final ItemGroup TAB= new TugaFlavoursTabs();
 }

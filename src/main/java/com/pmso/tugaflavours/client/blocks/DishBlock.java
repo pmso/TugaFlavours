@@ -32,7 +32,7 @@ public class DishBlock extends Block{
 	
 	public DishBlock() {
 		super(Block.Properties.create(Material.GLASS)
-				.hardnessAndResistance(0.001f,3.0f)
+				.zeroHardnessAndResistance()
 				.sound(SoundType.GLASS)
 				.harvestLevel(0)
 				.harvestLevel(1));
