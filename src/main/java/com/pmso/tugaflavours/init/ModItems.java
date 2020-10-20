@@ -74,10 +74,14 @@ public class ModItems {
 	// Block Items
 	public static final RegistryObject<Item> CORK_BLOCK_ITEM = ITEMS.register("cork_block",
 			() -> new BlockItemBase(ModBlocks.CORK_BLOCK.get()));
-	
+
 	public static final RegistryObject<Item> CORK_LOG_ITEM = ITEMS.register("cork_log", 
 			()-> new BlockItemBase(ModBlocks.CORK_LOG.get()));
+	public static final RegistryObject<Item> CORK_PLANKS_ITEM = ITEMS.register("cork_planks", 
+			()-> new BlockItemBase(ModBlocks.CORK_PLANKS.get()));
 
+	public static final RegistryObject<Item> CORK_LEAVES=ITEMS.register("cork_leaves", ()->new BlockItemBase(ModBlocks.CORK_LEAVES.get()));
+	
 	public static final RegistryObject<Item> DISH_ITEM = ITEMS.register("dish_block",
 			() -> new BlockItemBase(ModBlocks.DISH_BLOCK.get()));
 
