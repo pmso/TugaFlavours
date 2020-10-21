@@ -9,5 +9,6 @@ public class CorkLeaves extends LeavesBlock {
 	public CorkLeaves() {
 		super(Block.Properties.from(Blocks.OAK_LEAVES));
 	}
+	
 
 }

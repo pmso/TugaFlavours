@@ -1,6 +1,6 @@
 {
   "parent": "block/leaves",
   "textures": {
-    "all": "minecraft:blocks/oak_leaves"
+    "all": "tugaflavours:blocks/cork_leaves"
   }
 }
