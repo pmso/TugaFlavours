@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": { "model": "tugaflavours:block/cork_log" }
+    "axis=y":  { "model": "tugaflavours:block/cork_log" },
+    "axis=z":   { "model": "tugaflavours:block/cork_log", "x": 90 },
+    "axis=x":   { "model": "tugaflavours:block/cork_log", "x": 90, "y": 90 }
   }
 }

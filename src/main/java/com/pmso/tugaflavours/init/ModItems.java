@@ -38,6 +38,8 @@ public class ModItems {
 	public static final RegistryObject<Item> DRIED_COD = ITEMS.register("dried_cod", ItemBase::new);
 	public static final RegistryObject<Item> CORK = ITEMS.register("cork", ItemBase::new);
 
+	public static final RegistryObject<Item> CORK_SAPPLING = ITEMS.register("cork_sappling", ItemBase::new);
+
 	// Tools
 	public static final RegistryObject<SwordItem> CORK_SWORD = ITEMS.register("cork_sword",
 			() -> new SwordItem(ModItemTier.CORK, 2, -2.4f, new Item.Properties().group(Tugaflavours.TAB)));
