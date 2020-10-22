@@ -3,7 +3,6 @@ package com.pmso.tugaflavours.init;
 import com.pmso.tugaflavours.Tugaflavours;
 import com.pmso.tugaflavours.client.blocks.BlockItemBase;
 import com.pmso.tugaflavours.client.items.ItemBase;
-import com.pmso.tugaflavours.client.items.ModMusicDiscItem;
 import com.pmso.tugaflavours.util.enums.ModArmourMaterial;
 import com.pmso.tugaflavours.util.enums.ModItemTier;
 
@@ -13,12 +12,10 @@ import net.minecraft.item.ArmorItem;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.HoeItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.Items;
 import net.minecraft.item.MusicDiscItem;
 import net.minecraft.item.PickaxeItem;
 import net.minecraft.item.ShovelItem;
 import net.minecraft.item.SwordItem;
-import net.minecraft.util.SoundEvents;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -37,8 +34,6 @@ public class ModItems {
 	public static final RegistryObject<Item> TUGA_COD = ITEMS.register("tuga_cod", ItemBase::new);
 	public static final RegistryObject<Item> DRIED_COD = ITEMS.register("dried_cod", ItemBase::new);
 	public static final RegistryObject<Item> CORK = ITEMS.register("cork", ItemBase::new);
-
-	public static final RegistryObject<Item> CORK_SAPPLING = ITEMS.register("cork_sappling", ItemBase::new);
 
 	// Tools
 	public static final RegistryObject<SwordItem> CORK_SWORD = ITEMS.register("cork_sword",
@@ -83,6 +78,9 @@ public class ModItems {
 			()-> new BlockItemBase(ModBlocks.CORK_PLANKS.get()));
 
 	public static final RegistryObject<Item> CORK_LEAVES=ITEMS.register("cork_leaves", ()->new BlockItemBase(ModBlocks.CORK_LEAVES.get()));
+	
+	public static final RegistryObject<Item> CORK_SAPLING = ITEMS.register("cork_sapling", ()->new BlockItemBase(ModBlocks.CORK_SAPLING.get()));
+	
 	
 	public static final RegistryObject<Item> DISH_ITEM = ITEMS.register("dish_block",
 			() -> new BlockItemBase(ModBlocks.DISH_BLOCK.get()));

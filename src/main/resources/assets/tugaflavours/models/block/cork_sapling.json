@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "tugaflavours:blocks/cork_sapling"
+    }
+}
