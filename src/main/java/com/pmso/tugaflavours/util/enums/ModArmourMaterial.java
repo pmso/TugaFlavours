@@ -52,7 +52,7 @@ public enum ModArmourMaterial implements IArmorMaterial{
 		return enchantability;
 	}
 
-	@Override
+	@Override /*func_230304_f_*/
 	public float getKnockbackResistance() {
 		return knockbackResistance;
 	}
@@ -76,5 +76,6 @@ public enum ModArmourMaterial implements IArmorMaterial{
 	public float getToughness() {
 		return toughness;
 	}
+
 
 }

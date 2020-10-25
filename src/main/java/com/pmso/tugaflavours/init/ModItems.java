@@ -72,10 +72,36 @@ public class ModItems {
 	public static final RegistryObject<Item> CORK_BLOCK_ITEM = ITEMS.register("cork_block",
 			() -> new BlockItemBase(ModBlocks.CORK_BLOCK.get()));
 
+	public static final RegistryObject<Item> CORK_STAIRS_ITEM=ITEMS.register("cork_stairs", 
+			()->new BlockItemBase(ModBlocks.CORK_STAIRS.get()));
+	public static final RegistryObject<Item> CORK_FENCE_ITEM=ITEMS.register("cork_fence", 
+			()->new BlockItemBase(ModBlocks.CORK_FENCE.get()));
+	public static final RegistryObject<Item> CORK_FENCE_GATE_ITEM=ITEMS.register("cork_fence_gate", 
+			()->new BlockItemBase(ModBlocks.CORK_FENCE_GATE.get()));
+	public static final RegistryObject<Item> CORK_BUTTON_ITEM=ITEMS.register("cork_button", 
+			()->new BlockItemBase(ModBlocks.CORK_BUTTON.get()));
+	public static final RegistryObject<Item> CORK_PRESSURE_PLATE_ITEM=ITEMS.register("cork_pressure_plate", 
+			()->new BlockItemBase(ModBlocks.CORK_PRESSURE_PLATE.get()));
+	public static final RegistryObject<Item> CORK_SLAB_ITEM=ITEMS.register("cork_slab", 
+			()->new BlockItemBase(ModBlocks.CORK_SLAB.get()));
+
 	public static final RegistryObject<Item> CORK_LOG_ITEM = ITEMS.register("cork_log", 
 			()-> new BlockItemBase(ModBlocks.CORK_LOG.get()));
 	public static final RegistryObject<Item> CORK_PLANKS_ITEM = ITEMS.register("cork_planks", 
 			()-> new BlockItemBase(ModBlocks.CORK_PLANKS.get()));
+	
+	public static final RegistryObject<Item> CORK_PLANK_STAIRS_ITEM=ITEMS.register("cork_plank_stairs", 
+			()->new BlockItemBase(ModBlocks.CORK_PLANK_STAIRS.get()));
+	public static final RegistryObject<Item> CORK_PLANK_FENCE_ITEM=ITEMS.register("cork_plank_fence", 
+			()->new BlockItemBase(ModBlocks.CORK_PLANK_FENCE.get()));
+	public static final RegistryObject<Item> CORK_PLANK_FENCE_GATE_ITEM=ITEMS.register("cork_plank_fence_gate", 
+			()->new BlockItemBase(ModBlocks.CORK_PLANK_FENCE_GATE.get()));
+	public static final RegistryObject<Item> CORK_PLANK_BUTTON_ITEM=ITEMS.register("cork_plank_button", 
+			()->new BlockItemBase(ModBlocks.CORK_PLANK_BUTTON.get()));
+	public static final RegistryObject<Item> CORK_PLANK_PRESSURE_PLATE_ITEM=ITEMS.register("cork_plank_pressure_plate", 
+			()->new BlockItemBase(ModBlocks.CORK_PLANK_PRESSURE_PLATE.get()));
+	public static final RegistryObject<Item> CORK_PLANK_SLAB_ITEM=ITEMS.register("cork_plank_slab", 
+			()->new BlockItemBase(ModBlocks.CORK_PLANK_SLAB.get()));
 
 	public static final RegistryObject<Item> CORK_LEAVES=ITEMS.register("cork_leaves", ()->new BlockItemBase(ModBlocks.CORK_LEAVES.get()));
 	

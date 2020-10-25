@@ -3,9 +3,21 @@
 
 "item.tugaflavours.cork":"Cork",
 "block.tugaflavours.cork_block":"Cork Block",
+"block.tugaflavours.cork_stairs":"Cork Stairs",
+"block.tugaflavours.cork_fence":"Cork Fence",
+"block.tugaflavours.cork_fence_gate":"Cork Fence Gate",
+"block.tugaflavours.cork_button":"Cork Button",
+"block.tugaflavours.cork_pressure_plate":"Cork Pressure Plate",
 
 "block.tugaflavours.cork_log":"Cork Log",
 "block.tugaflavours.cork_planks":"Cork Planks",
+
+"block.tugaflavours.cork_plank_stairs":"Cork Plank Stairs",
+"block.tugaflavours.cork_plank_fence":"Cork Plank Fence",
+"block.tugaflavours.cork_plank_fence_gate":"Cork Plank Fence Gate",
+"block.tugaflavours.cork_plank_button":"Cork Plank Button",
+"block.tugaflavours.cork_plank_pressure_plate":"Cork Plank Pressure Plate",
+
 "block.tugaflavours.cork_leaves":"Cork Leaves",
 "block.tugaflavours.cork_sapling":"Cork Sapling",
 

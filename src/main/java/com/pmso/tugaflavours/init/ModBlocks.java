@@ -15,6 +15,7 @@ import net.minecraft.block.FenceBlock;
 import net.minecraft.block.FenceGateBlock;
 import net.minecraft.block.PressurePlateBlock;
 import net.minecraft.block.PressurePlateBlock.Sensitivity;
+import net.minecraft.block.SlabBlock;
 import net.minecraft.block.StairsBlock;
 import net.minecraft.block.WoodButtonBlock;
 import net.minecraft.block.material.Material;
@@ -47,6 +48,8 @@ public class ModBlocks {
 	public static final RegistryObject<Block> CORK_PRESSURE_PLATE = BLOCKS.register("cork_pressure_plate",
 			() -> new PressurePlateBlock(Sensitivity.EVERYTHING,
 					Block.Properties.create(Material.SAND, MaterialColor.GOLD)));
+	public static final RegistryObject<Block> CORK_SLAB = BLOCKS.register("cork_slab",
+			() -> new SlabBlock(Block.Properties.from(ModBlocks.CORK_BLOCK.get())));
 
 	public static final RegistryObject<Block> CORK_LOG = BLOCKS.register("cork_log", CorkLogBlock::new);
 	public static final RegistryObject<Block> CORK_PLANKS = BLOCKS.register("cork_planks",
@@ -64,6 +67,8 @@ public class ModBlocks {
 	public static final RegistryObject<Block> CORK_PLANK_PRESSURE_PLATE = BLOCKS.register("cork_plank_pressure_plate",
 			() -> new PressurePlateBlock(Sensitivity.EVERYTHING,
 					Block.Properties.create(Material.SAND, MaterialColor.GOLD)));
+	public static final RegistryObject<Block> CORK_PLANK_SLAB = BLOCKS.register("cork_plank_slab",
+			() -> new SlabBlock(Block.Properties.from(ModBlocks.CORK_PLANKS.get())));
 	
 	public static final RegistryObject<Block> CORK_LEAVES = BLOCKS.register("cork_leaves", CorkLeaves::new);
 	

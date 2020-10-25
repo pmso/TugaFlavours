@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_post",
+  "textures": {
+    "texture": "tugaflavours:blocks/cork_block"
+  }
+}
