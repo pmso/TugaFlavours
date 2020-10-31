@@ -38,11 +38,11 @@ public class ModBlocks {
 	
 	public static final RegistryObject<Block> CORK_STAIRS = BLOCKS.register("cork_stairs",
 			() -> new StairsBlock(() -> CORK_BLOCK.get().getDefaultState(),
-					Block.Properties.create(Material.SAND, MaterialColor.GOLD)));
+					Block.Properties.from(ModBlocks.CORK_BLOCK.get())));
 	public static final RegistryObject<Block> CORK_FENCE = BLOCKS.register("cork_fence",
-			() -> new FenceBlock(Block.Properties.create(Material.SAND, MaterialColor.GOLD)));
+			() -> new FenceBlock(Block.Properties.from(ModBlocks.CORK_BLOCK.get())));
 	public static final RegistryObject<Block> CORK_FENCE_GATE = BLOCKS.register("cork_fence_gate",
-			() -> new FenceGateBlock(Block.Properties.create(Material.SAND, MaterialColor.GOLD)));
+			() -> new FenceGateBlock(Block.Properties.from(ModBlocks.CORK_BLOCK.get())));
 	public static final RegistryObject<Block> CORK_BUTTON = BLOCKS.register("cork_button",
 			() -> new WoodButtonBlock(Block.Properties.create(Material.SAND, MaterialColor.GOLD)));
 	public static final RegistryObject<Block> CORK_PRESSURE_PLATE = BLOCKS.register("cork_pressure_plate",
@@ -57,11 +57,11 @@ public class ModBlocks {
 	
 	public static final RegistryObject<Block> CORK_PLANK_STAIRS = BLOCKS.register("cork_plank_stairs",
 			() -> new StairsBlock(() -> CORK_PLANKS.get().getDefaultState(),
-					Block.Properties.create(Material.SAND, MaterialColor.GOLD)));
+					Block.Properties.from(ModBlocks.CORK_PLANKS.get())));
 	public static final RegistryObject<Block> CORK_PLANK_FENCE = BLOCKS.register("cork_plank_fence",
-			() -> new FenceBlock(Block.Properties.create(Material.SAND, MaterialColor.GOLD)));
+			() -> new FenceBlock(Block.Properties.from(ModBlocks.CORK_PLANKS.get())));
 	public static final RegistryObject<Block> CORK_PLANK_FENCE_GATE = BLOCKS.register("cork_plank_fence_gate",
-			() -> new FenceGateBlock(Block.Properties.create(Material.SAND, MaterialColor.GOLD)));
+			() -> new FenceGateBlock(Block.Properties.from(ModBlocks.CORK_PLANKS.get())));
 	public static final RegistryObject<Block> CORK_PLANK_BUTTON = BLOCKS.register("cork_plank_button",
 			() -> new WoodButtonBlock(Block.Properties.create(Material.SAND, MaterialColor.GOLD)));
 	public static final RegistryObject<Block> CORK_PLANK_PRESSURE_PLATE = BLOCKS.register("cork_plank_pressure_plate",

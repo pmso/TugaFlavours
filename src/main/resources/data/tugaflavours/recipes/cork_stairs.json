@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "c  ",
+    "cc ",
+    "ccc"
+  ],
+  "key":
+  {
+    "c":
+    {
+      "item": "tugaflavours:cork_block"
+    }
+  },
+  "result":
+  {
+    "item": "tugaflavours:cork_stairs",
+    "count": 4
+  }
+}

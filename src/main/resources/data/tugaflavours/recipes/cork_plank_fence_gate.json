@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_fence",
+  "pattern":
+  [
+    "xcx",
+    "xcx"
+  ],
+  "key":
+  {
+    "c":
+    {
+      "item": "tugaflavours:cork_planks"
+    },
+    "x":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+  "result":
+  {
+    "item": "tugaflavours:cork_plank_fence_gate",
+    "count": 1
+  }
+}

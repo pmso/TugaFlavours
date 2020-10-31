@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "tugaflavours:block/cork_plank_slab"
+    },
+    "type=double": {
+      "model": "tugaflavours:block/cork_planks"
+    },
+    "type=top": {
+      "model": "tugaflavours:block/cork_plank_slab_top"
+    }
+  }
+}

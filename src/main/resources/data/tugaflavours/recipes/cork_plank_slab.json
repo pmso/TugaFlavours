@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "ccc"
+  ],
+  "key":
+  {
+    "c":
+    {
+      "item": "tugaflavours:cork_planks"
+    }
+  },
+  "result":
+  {
+    "item": "tugaflavours:cork_plank_slab",
+    "count": 6
+  }
+}

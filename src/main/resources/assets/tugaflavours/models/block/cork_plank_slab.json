@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "tugaflavours:blocks/cork_planks",
+    "top": "tugaflavours:blocks/cork_planks",
+    "side": "tugaflavours:blocks/cork_planks"
+  }
+}
