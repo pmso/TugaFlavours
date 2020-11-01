@@ -12,6 +12,7 @@ import net.minecraft.item.ArmorItem;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.HoeItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.Items;
 import net.minecraft.item.MusicDiscItem;
 import net.minecraft.item.PickaxeItem;
 import net.minecraft.item.ShovelItem;
@@ -115,6 +116,6 @@ public class ModItems {
 			() -> new BlockItemBase(ModBlocks.FRANCESINHA_BLOCK.get()));
 
 	// Record Item
-	public static final RegistryObject<MusicDiscItem> HINO_DISC = ITEMS.register("hino_disc",
+	public static final RegistryObject<MusicDiscItem> HINO_DISC = ITEMS.register("disc_hino",
 			() -> new MusicDiscItem(15, ModSounds.LAZY_HINO_MUSIC, new Item.Properties().group(Tugaflavours.TAB).maxStackSize(1).rarity(Rarity.RARE)));
 }

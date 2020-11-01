@@ -1,6 +1,5 @@
 package com.pmso.tugaflavours.world.biomes;
 
-
 import com.pmso.tugaflavours.world.feature.CorkTree;
 
 import net.minecraft.entity.EntityClassification;
@@ -16,7 +15,7 @@ import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.Features;
 import net.minecraft.world.gen.feature.structure.StructureFeatures;
-import net.minecraft.world.gen.placement.ChanceConfig;
+import net.minecraft.world.gen.placement.AtSurfaceWithExtraConfig;
 import net.minecraft.world.gen.placement.Placement;
 import net.minecraft.world.gen.surfacebuilders.ConfiguredSurfaceBuilders;
 
@@ -31,23 +30,20 @@ public class AlentejoBiome {
 		final BiomeGenerationSettings.Builder biomeGenerationSettingBuilder = new BiomeGenerationSettings.Builder()
 				.withSurfaceBuilder(ConfiguredSurfaceBuilders.field_244178_j);
 		DefaultBiomeFeatures.withStrongholdAndMineshaft(biomeGenerationSettingBuilder);
-		biomeGenerationSettingBuilder.withStructure(StructureFeatures.RUINED_PORTAL);
-
-		//biomeGenerationSettingBuilder.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Features.PLAIN_VEGETATION);
-		//biomeGenerationSettingBuilder.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Features.PATCH_GRASS_PLAIN);
-		biomeGenerationSettingBuilder.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, 
-				Feature.TREE.withConfiguration(CorkTree.CORK_TREE_CONFIG)
-				.withPlacement(Placement.CHANCE.configure(new ChanceConfig(3))
-						));
-
 		biomeGenerationSettingBuilder.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Features.PATCH_GRASS_SAVANNA);
+
+		
+		biomeGenerationSettingBuilder.withFeature(GenerationStage.Decoration.LOCAL_MODIFICATIONS,//THIS PHASE IS UGLY BUT IT WORKS 
+				Feature.TREE.withConfiguration(CorkTree.CORK_TREE_CONFIG)
+				.withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(0, 0.1f, 1)))
+						);
 	      
 		DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettingBuilder);
 		DefaultBiomeFeatures.withMonsterRoom(biomeGenerationSettingBuilder);
-
 		DefaultBiomeFeatures.withCommonOverworldBlocks(biomeGenerationSettingBuilder);
 		DefaultBiomeFeatures.withOverworldOres(biomeGenerationSettingBuilder);
 		DefaultBiomeFeatures.withDisks(biomeGenerationSettingBuilder);
+		biomeGenerationSettingBuilder.withStructure(StructureFeatures.RUINED_PORTAL);
 
 		Biome alentejo = new Biome.Builder().precipitation(Biome.RainType.RAIN)
 				.temperature(0.8f)
@@ -61,17 +57,18 @@ public class AlentejoBiome {
 						.setWaterFogColor(329011)
 						.setFogColor(12638463)
 						.withSkyColor(getSkyColorWithTemperatureModifier(0.8F))
-						.withGrassColor(14870036)
+						.withGrassColor(14784000)
 						.setMoodSound(MoodSoundAmbience.DEFAULT_CAVE).build())
 				.category(Biome.Category.SAVANNA).build();
+		
 		
 		return alentejo;
 
 	}
-	
+
 	private static int getSkyColorWithTemperatureModifier(float temperature) {
-	      float lvt_1_1_ = temperature / 3.0F;
-	      lvt_1_1_ = MathHelper.clamp(lvt_1_1_, -1.0F, 1.0F);
-	      return MathHelper.hsvToRGB(0.62222224F - lvt_1_1_ * 0.05F, 0.5F + lvt_1_1_ * 0.1F, 1.0F);
-	   }
+		float lvt_1_1_ = temperature / 3.0F;
+		lvt_1_1_ = MathHelper.clamp(lvt_1_1_, -1.0F, 1.0F);
+		return MathHelper.hsvToRGB(0.62222224F - lvt_1_1_ * 0.05F, 0.5F + lvt_1_1_ * 0.1F, 1.0F);
+	}
 }

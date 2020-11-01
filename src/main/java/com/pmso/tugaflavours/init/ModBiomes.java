@@ -33,7 +33,7 @@ public class ModBiomes {
 	
 	private static void registerBiome(RegistryKey<Biome> biome, Type... types) {
 		// the line below will make it spawn in the overworld
-		BiomeManager.addBiome(BiomeManager.BiomeType.COOL, new BiomeManager.BiomeEntry(biome, 100));
+		BiomeManager.addBiome(BiomeManager.BiomeType.WARM, new BiomeManager.BiomeEntry(biome, 100));
 		
 		//BiomeManager.addSpawnBiome(biome);
 		BiomeDictionary.addTypes(biome, types);
