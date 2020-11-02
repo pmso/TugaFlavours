@@ -18,9 +18,9 @@ public class ModSounds {
 		SOUNDS.register(FMLJavaModLoadingContext.get().getModEventBus());
 	}
 
-	public static final Lazy<SoundEvent> LAZY_HINO_MUSIC= Lazy.of(()-> new SoundEvent(new ResourceLocation(Tugaflavours.MOD_ID,"disc.hino")));
+	public static final Lazy<SoundEvent> LAZY_HINO_MUSIC= Lazy.of(()-> new SoundEvent(new ResourceLocation(Tugaflavours.MOD_ID,"disc.hino_disc")));
 	
 	// Records
-	public static final RegistryObject<SoundEvent> HINO_MUSIC = SOUNDS.register("hino_music", LAZY_HINO_MUSIC);
+	public static final RegistryObject<SoundEvent> HINO_MUSIC = SOUNDS.register("disc.hino_disc.disc", LAZY_HINO_MUSIC);
 
 }

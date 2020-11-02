@@ -3,6 +3,7 @@ package com.pmso.tugaflavours.init;
 import com.pmso.tugaflavours.Tugaflavours;
 import com.pmso.tugaflavours.client.blocks.BlockItemBase;
 import com.pmso.tugaflavours.client.items.ItemBase;
+import com.pmso.tugaflavours.client.items.ModMusicDiscItem;
 import com.pmso.tugaflavours.util.enums.ModArmourMaterial;
 import com.pmso.tugaflavours.util.enums.ModItemTier;
 
@@ -115,7 +116,7 @@ public class ModItems {
 	public static final RegistryObject<Item> FRANCESINHA_ITEM = ITEMS.register("francesinha_block",
 			() -> new BlockItemBase(ModBlocks.FRANCESINHA_BLOCK.get()));
 
-	// Record Item
-	public static final RegistryObject<MusicDiscItem> HINO_DISC = ITEMS.register("disc_hino",
-			() -> new MusicDiscItem(15, ModSounds.LAZY_HINO_MUSIC, new Item.Properties().group(Tugaflavours.TAB).maxStackSize(1).rarity(Rarity.RARE)));
+	// Music Disc Item
+	public static final RegistryObject<Item> HINO_MUSIC_DISC = ITEMS.register("hino_disc",
+			() -> new ModMusicDiscItem(15, ModSounds.LAZY_HINO_MUSIC.get(), new Item.Properties().group(Tugaflavours.TAB).maxStackSize(1).rarity(Rarity.RARE)));
 }

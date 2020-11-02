@@ -7,7 +7,8 @@ import net.minecraft.util.SoundEvent;
 
 public class ModMusicDiscItem extends MusicDiscItem{
 
-	public ModMusicDiscItem(int comparatorValueIn, Supplier<SoundEvent> soundIn, Properties builder) {
+	@SuppressWarnings("deprecation")
+	public ModMusicDiscItem(int comparatorValueIn, SoundEvent soundIn, Properties builder) {
 		super(comparatorValueIn, soundIn, builder);
 		// TODO Auto-generated constructor stub
 	}

@@ -1,10 +1,10 @@
 {
-	"disc.hino":{
+	"disc.hino_disc":{
 		"category":"disc",
-		"subtitle":"hino",
+		"subtitle":"disc.hino_disc.sub",
 		"sounds":[
 			{
-				"name":"tugaflavours:disc/hino",
+				"name":"tugaflavours:disc/hino_disc",
 				"stream":true
 			}
 		]

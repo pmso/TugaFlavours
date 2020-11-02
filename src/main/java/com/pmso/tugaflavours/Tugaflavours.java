@@ -15,6 +15,7 @@ import org.apache.logging.log4j.Logger;
 import com.pmso.tugaflavours.init.ModBiomes;
 import com.pmso.tugaflavours.init.ModBlocks;
 import com.pmso.tugaflavours.init.ModItems;
+import com.pmso.tugaflavours.init.ModPaintings;
 import com.pmso.tugaflavours.init.ModSounds;
 import com.pmso.tugaflavours.init.ModVanillaIntegration;
 import com.pmso.tugaflavours.util.TugaFlavoursTabs;
@@ -38,6 +39,7 @@ public class Tugaflavours
         ModItems.init();
         ModBlocks.init();
         ModBiomes.init();
+        ModPaintings.init();
         ModVanillaIntegration.init();
 
         // Register ourselves for server and other game events we are interested in
