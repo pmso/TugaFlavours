@@ -10,6 +10,7 @@ import net.minecraft.util.RegistryKey;
 import net.minecraft.world.biome.Biome;
 import net.minecraftforge.common.BiomeDictionary;
 import net.minecraftforge.common.BiomeDictionary.Type;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.common.BiomeManager;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -19,11 +20,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class ModBiomes {
 	public static final DeferredRegister<Biome> BIOMES = DeferredRegister.create(ForgeRegistries.BIOMES,
 			Tugaflavours.MOD_ID);
-	
-	public static void init() {
-		BIOMES.register(FMLJavaModLoadingContext.get().getModEventBus());
-		//CakeBlock
-	}
 	
 	public static final RegistryObject<Biome> ALENTEJO_BIOME=BIOMES.register("alentejo_biome", ()-> AlentejoBiome.buildBiome());
 	

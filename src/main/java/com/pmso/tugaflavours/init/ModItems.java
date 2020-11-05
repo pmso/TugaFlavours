@@ -18,6 +18,7 @@ import net.minecraft.item.MusicDiscItem;
 import net.minecraft.item.PickaxeItem;
 import net.minecraft.item.ShovelItem;
 import net.minecraft.item.SwordItem;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -27,10 +28,6 @@ public class ModItems {
 
 	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS,
 			Tugaflavours.MOD_ID);
-
-	public static void init() {
-		ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
-	}
 
 	// Items
 	public static final RegistryObject<Item> TUGA_COD = ITEMS.register("tuga_cod", ItemBase::new);
