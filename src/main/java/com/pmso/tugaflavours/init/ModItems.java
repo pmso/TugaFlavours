@@ -13,14 +13,10 @@ import net.minecraft.item.ArmorItem;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.HoeItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.Items;
-import net.minecraft.item.MusicDiscItem;
 import net.minecraft.item.PickaxeItem;
 import net.minecraft.item.ShovelItem;
 import net.minecraft.item.SwordItem;
-import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.RegistryObject;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
@@ -86,6 +82,8 @@ public class ModItems {
 
 	public static final RegistryObject<Item> CORK_LOG_ITEM = ITEMS.register("cork_log", 
 			()-> new BlockItemBase(ModBlocks.CORK_LOG.get()));
+	public static final RegistryObject<Item> STRIPPED_CORK_LOG_ITEM = ITEMS.register("stripped_cork_log", 
+			()-> new BlockItemBase(ModBlocks.STRIPPED_CORK_LOG.get()));
 	public static final RegistryObject<Item> CORK_PLANKS_ITEM = ITEMS.register("cork_planks", 
 			()-> new BlockItemBase(ModBlocks.CORK_PLANKS.get()));
 	

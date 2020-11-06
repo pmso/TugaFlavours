@@ -2,11 +2,9 @@ package com.pmso.tugaflavours;
 
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.world.Dimension;
 import net.minecraft.world.biome.Biome;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.eventbus.EventBus;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -18,7 +16,6 @@ import org.apache.logging.log4j.Logger;
 
 import com.pmso.tugaflavours.init.ModBiomes;
 import com.pmso.tugaflavours.init.ModBlocks;
-import com.pmso.tugaflavours.init.ModDimensions;
 import com.pmso.tugaflavours.init.ModItems;
 import com.pmso.tugaflavours.init.ModPaintings;
 import com.pmso.tugaflavours.init.ModSounds;
@@ -30,9 +27,12 @@ import com.pmso.tugaflavours.util.TugaFlavoursTabs;
 public class Tugaflavours
 {
     // Directly reference a log4j logger.
-    private static final Logger LOGGER = LogManager.getLogger();
+    public static final Logger LOGGER = LogManager.getLogger();
     
     public static final String MOD_ID="tugaflavours";
+    
+    public static IEventBus MOD_EVENT_BUS;
+    
     public static final ItemGroup TAB= new TugaFlavoursTabs();
 
     public Tugaflavours() {
@@ -40,14 +40,13 @@ public class Tugaflavours
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
         
-        IEventBus eventBus=FMLJavaModLoadingContext.get().getModEventBus();
+        MOD_EVENT_BUS=FMLJavaModLoadingContext.get().getModEventBus();
         
-        ModSounds.SOUNDS.register(eventBus);
-        ModItems.ITEMS.register(eventBus);
-        ModBlocks.BLOCKS.register(eventBus);
-        ModPaintings.PAINTING_TYPES.register(eventBus);
-        ModBiomes.BIOMES.register(eventBus);
-       // ModDimensions.DIMENSIONS.register(eventBus);
+        ModSounds.SOUNDS.register(MOD_EVENT_BUS);
+        ModItems.ITEMS.register(MOD_EVENT_BUS);
+        ModBlocks.BLOCKS.register(MOD_EVENT_BUS);
+        ModPaintings.PAINTING_TYPES.register(MOD_EVENT_BUS);
+        ModBiomes.BIOMES.register(MOD_EVENT_BUS);
         ModVanillaIntegration.init();
 
         // Register ourselves for server and other game events we are interested in

@@ -5,15 +5,12 @@ import java.util.Objects;
 import com.pmso.tugaflavours.Tugaflavours;
 import com.pmso.tugaflavours.world.biomes.AlentejoBiome;
 
-import net.minecraft.data.BiomeProvider;
 import net.minecraft.util.RegistryKey;
 import net.minecraft.world.biome.Biome;
 import net.minecraftforge.common.BiomeDictionary;
 import net.minecraftforge.common.BiomeDictionary.Type;
-import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.common.BiomeManager;
 import net.minecraftforge.fml.RegistryObject;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 

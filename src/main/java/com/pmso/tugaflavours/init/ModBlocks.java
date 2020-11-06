@@ -1,12 +1,13 @@
 package com.pmso.tugaflavours.init;
 
 import com.pmso.tugaflavours.Tugaflavours;
-import com.pmso.tugaflavours.client.blocks.CorkBlock;
-import com.pmso.tugaflavours.client.blocks.CorkLeaves;
-import com.pmso.tugaflavours.client.blocks.CorkLogBlock;
 import com.pmso.tugaflavours.client.blocks.DishBlock;
 import com.pmso.tugaflavours.client.blocks.FrancesinhaBlock;
 import com.pmso.tugaflavours.client.blocks.ModSaplingBlock;
+import com.pmso.tugaflavours.client.blocks.cork.CorkBlock;
+import com.pmso.tugaflavours.client.blocks.cork.CorkLeaves;
+import com.pmso.tugaflavours.client.blocks.cork.CorkLogBlock;
+import com.pmso.tugaflavours.client.blocks.cork.StrippedCorkLogBlock;
 import com.pmso.tugaflavours.world.feature.CorkTree;
 
 import net.minecraft.block.Block;
@@ -20,9 +21,7 @@ import net.minecraft.block.StairsBlock;
 import net.minecraft.block.WoodButtonBlock;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
-import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.RegistryObject;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
@@ -50,6 +49,7 @@ public class ModBlocks {
 			() -> new SlabBlock(Block.Properties.from(ModBlocks.CORK_BLOCK.get())));
 
 	public static final RegistryObject<Block> CORK_LOG = BLOCKS.register("cork_log", CorkLogBlock::new);
+	public static final RegistryObject<Block> STRIPPED_CORK_LOG = BLOCKS.register("stripped_cork_log", StrippedCorkLogBlock::new);
 	public static final RegistryObject<Block> CORK_PLANKS = BLOCKS.register("cork_planks",
 			() -> new Block(Block.Properties.from(Blocks.OAK_PLANKS)));
 	

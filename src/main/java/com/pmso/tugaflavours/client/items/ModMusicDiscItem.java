@@ -1,7 +1,5 @@
 package com.pmso.tugaflavours.client.items;
 
-import java.util.function.Supplier;
-
 import net.minecraft.item.MusicDiscItem;
 import net.minecraft.util.SoundEvent;
 

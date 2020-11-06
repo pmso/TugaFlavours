@@ -1,4 +1,4 @@
-package com.pmso.tugaflavours.client.blocks;
+package com.pmso.tugaflavours.client.blocks.cork;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;

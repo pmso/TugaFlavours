@@ -1,6 +1,5 @@
 package com.pmso.tugaflavours.util;
 
-import java.util.Collections;
 import java.util.Comparator;
 
 import com.pmso.tugaflavours.init.ModItems;
@@ -8,9 +7,6 @@ import com.pmso.tugaflavours.init.ModItems;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
-import net.minecraft.util.text.TextComponent;
-import net.minecraft.util.text.TextComponentUtils;
-import net.minecraft.util.text.TranslationTextComponent;
 
 public class TugaFlavoursTabs extends ItemGroup{
 
