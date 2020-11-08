@@ -21,6 +21,7 @@ public class StrippedCorkLogBlock extends RotatedPillarBlock {
 		super(Block.Properties.from(ModBlocks.CORK_LOG.get()).notSolid().tickRandomly());
 	}
 
+	@SuppressWarnings("deprecation")
 	@Override
 	public void randomTick(BlockState state, ServerWorld worldIn, BlockPos pos, Random random) {
 		super.randomTick(state, worldIn, pos, random);
