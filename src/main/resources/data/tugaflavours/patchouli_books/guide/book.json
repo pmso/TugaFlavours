@@ -1,0 +1,7 @@
+{
+	"name": "Portuguese Guide",
+	"landing_text": "LANDING TEXT",
+	"version": 1,
+	"model": "tugaflavours:tuga_cod",
+	"creative_tab":"tugaFlavoursTab"
+}

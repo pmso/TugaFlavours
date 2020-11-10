@@ -28,7 +28,7 @@ description='''
 This mod was created only to be a portuguese mod. Hope you like it
 '''
 
-[[dependencies.examplemod]] #optional
+[[dependencies.tugaFlavours]] #optional
     # the modid of the dependency
     modId="forge" #mandatory
     # Does this dependency have to exist - if not, ordering below must be specified
@@ -39,9 +39,15 @@ This mod was created only to be a portuguese mod. Hope you like it
     ordering="NONE"
     # Side this dependency is applied on - BOTH, CLIENT or SERVER
     side="BOTH"
-[[dependencies.examplemod]]
+[[dependencies.tugaFlavours]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.16.3]"
+    versionRange="[1.16.3,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.tugaFlavours]]
+    modId="patchouli"
+    mandatory=false
+    versionRange="[1.16.2-47]"
     ordering="NONE"
     side="BOTH"
