@@ -1,8 +1,8 @@
 ![Test](src/main/resources/logo.png) 
 
-#Welcome to the TugaFlavours repository.
+# Welcome to the TugaFlavours repository.
 
-For the version 1.0.0, we will have the Cork Update:
+For the version 1.0.0, we have the Cork Update:
 
 * Cork
 
@@ -15,7 +15,7 @@ For the version 1.0.0, we will have the Cork Update:
 * Alentejo
 
 
-For the version 1.0.1, we will have the Wine Update:
+For the upcoming version 1.0.1, we will have the Wine Update:
 
 * Cork Stopper
 
