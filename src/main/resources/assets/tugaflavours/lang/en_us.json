@@ -43,5 +43,37 @@
 "item.tugaflavours.cork_boots":"Cork Boots",
 
 "item.tugaflavours.hino_disc":"Music Disc",
-"item.tugaflavours.hino_disc.desc":"A Portuguesa"
+"item.tugaflavours.hino_disc.desc":"A Portuguesa",
+
+"item.tugaflavours.guide":"TugaFlavours Guide",
+"item.tugaflavours.guide.landing_text":"Welcome to the TugaFlavours Guide. $(br2)Here you will learn all the incredible portuguese world can offer to your daily life",
+
+"tugaflavour.category.tools":"Tools",
+"tugaflavour.category.tools.desc":"Every mod needs tools. $(br)So here are our tools",
+
+"tugaflavour.category.foods":"Foods",
+"tugaflavour.category.foods.desc":"Most important items of any $(#f00)Por$(#0f0)tuguese",
+
+"tugaflavour.category.biomes":"Biomes",
+"tugaflavour.category.biomes.desc":"$(playername), do you ever went to that cool place in Portugal? $(br2)You need to visit!",
+
+"tugaflavour.entry.cork_sword":"Cork Sword",
+"tugaflavour.entry.cork_sword0":"The $(item)Cork Sword$(0) is a simple sword. It's a sword $(br) but made of cork.",
+"tugaflavour.entry.cork_sword1":"Sword good for kids",
+
+"tugaflavour.entry.cork_axe":"Cork Axe",
+"tugaflavour.entry.cork_axe0":"The $(item)Cork Axe$(0) is a simple axe. It's an axe $(br) but made of cork.",
+"tugaflavour.entry.cork_axe1":"Axe good for kids",
+
+"tugaflavour.entry.cork_pickaxe":"Cork Pickaxe",
+"tugaflavour.entry.cork_pickaxe0":"The $(item)Cork Pickaxe$(0) is a simple pickaxe. It's a pickaxe $(br) but made of cork.",
+"tugaflavour.entry.cork_pickaxe1":"Pickaxe good for kids",
+
+"tugaflavour.entry.cork_shovel":"Cork Shovel",
+"tugaflavour.entry.cork_shovel0":"The $(item)Cork Shovel$(0) is a simple shovel. It's a shovel $(br) but made of cork.",
+"tugaflavour.entry.cork_shovel1":"Shovel good for kids",
+
+"tugaflavour.entry.cork_hoe":"Cork Hoe",
+"tugaflavour.entry.cork_hoe0":"The $(item)Cork Hoe$(0) is a simple hoe. It's an hoe $(br) but made of cork.",
+"tugaflavour.entry.cork_hoe1":"Hoe good for kids"
 }

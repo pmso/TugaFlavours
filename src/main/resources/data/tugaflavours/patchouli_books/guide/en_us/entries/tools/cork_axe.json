@@ -1,0 +1,16 @@
+{
+    "name": "tugaflavour.entry.cork_axe",
+    "icon": "tugaflavours:cork_axe",
+    "category": "tugaflavours:tools",
+    "pages": [
+        {
+      "type": "text",
+      "text": "tugaflavour.entry.cork_axe0"
+    },
+    {
+      "type": "crafting",
+      "text": "tugaflavour.entry.cork_axe1",
+      "recipe": "tugaflavours:cork_axe"
+    }
+    ]
+}

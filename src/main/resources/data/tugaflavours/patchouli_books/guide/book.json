@@ -1,7 +1,10 @@
 {
-	"name": "Portuguese Guide",
-	"landing_text": "LANDING TEXT",
+	"name": "item.tugaflavours.guide",
+	"landing_text": "item.tugaflavours.guide.landing_text",
 	"version": 1,
-	"model": "tugaflavours:tuga_cod",
+	"book_texture": "patchouli:textures/gui/book_red.png",
+	"model": "tugaflavours:guide",
+    "i18n": true,
+    "show_progress":false,
 	"creative_tab":"tugaFlavoursTab"
 }

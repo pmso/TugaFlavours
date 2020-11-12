@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "tugaflavours:items/tuga_cod"
+    "layer0": "tugaflavours:items/guide"
   }
 }
