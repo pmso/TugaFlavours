@@ -104,6 +104,8 @@ public class ModItems {
 	
 	public static final RegistryObject<Item> CORK_SAPLING = ITEMS.register("cork_sapling", ()->new BlockItemBase(ModBlocks.CORK_SAPLING.get()));
 	
+	public static final RegistryObject<Item> PORTUGUESE_PORTAL = ITEMS.register("portuguese_portal_block", ()->new BlockItemBase(ModBlocks.PORTUGUESE_PORTAL_BLOCK.get()));
+	
 	
 	public static final RegistryObject<Item> DISH_ITEM = ITEMS.register("dish_block",
 			() -> new BlockItemBase(ModBlocks.DISH_BLOCK.get()));
