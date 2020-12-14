@@ -19,7 +19,7 @@
 				}
 			},
 			"noise": {
-				"height": 128, // This allows us to shorten the world so we can cram more stuff upwards
+				"height": 256, // This allows us to shorten the world so we can cram more stuff upwards
 				"sampling": {
 					"xz_scale": 0.9999999814507745,
 					"y_scale": 0.9999999814507745,

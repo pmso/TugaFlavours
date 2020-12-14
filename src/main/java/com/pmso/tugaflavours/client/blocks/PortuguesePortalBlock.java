@@ -155,7 +155,7 @@ public class PortuguesePortalBlock extends Block {
 	
 	private Entity teleportEntity(Entity entity, ServerWorld endpointWorld, BlockPos endpoint, boolean otherDim) {
         if(otherDim){
-            endpoint = new BlockPos(0, 35, 0);
+            //endpoint = new BlockPos(0, 35, 0);
             placeInPortal(entity, endpointWorld);
         }else{
             if (entity instanceof PlayerEntity && ((PlayerEntity) entity).getBedPosition().isPresent()) {
@@ -164,7 +164,7 @@ public class PortuguesePortalBlock extends Block {
                 entity.setLocationAndAngles(bedPos.getX() + 0.5D, bedPos.getY() + 1.5D, bedPos.getZ() + 0.5D, 0.0F, 0.0F);
             } else {
                 BlockPos height = entity.world.getHeight(Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, new BlockPos(entity.getPositionVec()));
-                endpoint = height;
+                endpoint = height.east(1);//To not sit again in the portal
                 entity.setLocationAndAngles(height.getX() + 0.5D, height.getY() + 0.5D, height.getZ() + 0.5D, entity.rotationYaw, 0.0F);
             }
         }
@@ -189,9 +189,18 @@ public class PortuguesePortalBlock extends Block {
 
 	
 	public void placeInPortal(Entity entity, ServerWorld serverWorld) {
-        entity.setPositionAndRotation(0, 33, 0, 0, 0);
+		//entity.setPositionAndRotation(0, 33, 0, 0, 0);
         entity.setMotion(0, 0, 0);
-        BlockPos portalBottom = new BlockPos(1, 34, 1);
+        BlockPos portalBottom = entity.world.getHeight(Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, new BlockPos(entity.getPositionVec()));
+        portalBottom=portalBottom.down(4);
+
+        //Clearing area with air
+        for (BlockPos pos : BlockPos.getAllInBox(portalBottom.add(-2, 0, -2), portalBottom.add(2, 0, 2)).map(BlockPos::toImmutable).collect(Collectors.toList())) {
+            serverWorld.setBlockState(pos.up(1), Blocks.AIR.getDefaultState());
+            serverWorld.setBlockState(pos.up(2), Blocks.AIR.getDefaultState());
+            serverWorld.setBlockState(pos.up(3), Blocks.AIR.getDefaultState());
+        }
+        
         for (BlockPos pos : BlockPos.getAllInBox(portalBottom.add(-2, 0, -2), portalBottom.add(2, 0, 2)).map(BlockPos::toImmutable).collect(Collectors.toList())) {
             serverWorld.setBlockState(pos, ModBlocks.CORK_BLOCK.get().getDefaultState());
             serverWorld.setBlockState(pos.up(4), ModBlocks.CORK_BLOCK.get().getDefaultState());
