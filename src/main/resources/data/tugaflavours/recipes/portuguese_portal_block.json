@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "sss",
+    "scs",
+    "sss"
+  ],
+  "key":
+  {
+    "c":
+    {
+      "item": "minecraft:item_frame"
+    },
+    "s":
+    {
+      "item": "minecraft:stone_bricks"
+    }
+  },
+  "result":
+  {
+    "item": "tugaflavours:portuguese_portal_block",
+    "count": 1
+  }
+}

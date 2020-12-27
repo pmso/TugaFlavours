@@ -1,5 +1,6 @@
 {
   "variants": {
-    "": { "model": "tugaflavours:block/portuguese_portal_block" }
+    "lit=0": { "model": "tugaflavours:block/portuguese_portal_block_empty" },
+    "lit=1": { "model": "tugaflavours:block/portuguese_portal_block_filled" }
   }
 }
