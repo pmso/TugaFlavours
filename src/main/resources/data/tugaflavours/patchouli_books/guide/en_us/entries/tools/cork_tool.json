@@ -1,0 +1,31 @@
+{
+    "name": "tugaflavour.entry.cork_tools",
+    "icon": "tugaflavours:cork_axe",
+    "category": "tugaflavours:tools",
+    "pages": [
+        {
+      "type": "text",
+      "text": "tugaflavour.entry.cork_tools0"
+    },
+    {
+      "type": "crafting",
+      "text": "tugaflavour.entry.cork_axe",
+      "recipe": "tugaflavours:cork_axe"
+    },
+    {
+      "type": "crafting",
+      "text": "tugaflavour.entry.cork_pickaxe",
+      "recipe": "tugaflavours:cork_pickaxe"
+    },
+    {
+      "type": "crafting",
+      "text": "tugaflavour.entry.cork_shovel",
+      "recipe": "tugaflavours:cork_shovel"
+    },
+    {
+      "type": "crafting",
+      "text": "tugaflavour.entry.cork_sword",
+      "recipe": "tugaflavours:cork_axe"
+    }
+    ]
+}

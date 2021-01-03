@@ -1,0 +1,16 @@
+{
+    "name": "tugaflavour.entry.cork_block",
+    "icon": "tugaflavours:cork_block",
+    "category": "tugaflavours:blocks",
+    "pages": [
+        {
+      "type": "text",
+      "text": "tugaflavour.entry.cork_block0"
+    },
+    {
+      "type": "crafting",
+      "text": "tugaflavour.entry.cork_block1",
+      "recipe": "tugaflavours:cork_block"
+    }
+    ]
+}

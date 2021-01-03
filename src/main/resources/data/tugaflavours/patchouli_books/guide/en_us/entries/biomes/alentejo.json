@@ -1,0 +1,11 @@
+{
+    "name": "tugaflavours.alentejo_biome",
+    "icon": "tugaflavours:cork_sappling",
+    "category": "tugaflavours:biomes",
+    "pages": [
+        {
+      "type": "text",
+      "text": "tugaflavour.entry.alentejo0"
+    }
+    ]
+}
