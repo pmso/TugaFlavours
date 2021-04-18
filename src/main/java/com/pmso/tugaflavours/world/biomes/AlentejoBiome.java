@@ -28,7 +28,7 @@ public class AlentejoBiome {
 				new MobSpawnInfo.Spawners(EntityType.PIG, 10, 4, 4));
 
 		final BiomeGenerationSettings.Builder biomeGenerationSettingBuilder = new BiomeGenerationSettings.Builder()
-				.withSurfaceBuilder(ConfiguredSurfaceBuilders.field_244178_j);
+				.withSurfaceBuilder(ConfiguredSurfaceBuilders.GRASS);
 		DefaultBiomeFeatures.withStrongholdAndMineshaft(biomeGenerationSettingBuilder);
 		biomeGenerationSettingBuilder.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Features.PATCH_GRASS_SAVANNA);
 
@@ -50,7 +50,7 @@ public class AlentejoBiome {
 				.depth(0.125f)
 				.scale(0.05f)
 				.downfall(0.4f)
-				.withMobSpawnSettings(mobSpawnInfoBuilder.copy())
+				.withMobSpawnSettings(mobSpawnInfoBuilder.build())
 				.withGenerationSettings(biomeGenerationSettingBuilder.build())
 				.setEffects(new BiomeAmbience.Builder()
 						.setWaterColor(4159204)

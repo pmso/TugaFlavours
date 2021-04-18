@@ -19,7 +19,7 @@ public class CorkTree extends Tree {
 	public static final BaseTreeFeatureConfig CORK_TREE_CONFIG= (new BaseTreeFeatureConfig.Builder(
 			new SimpleBlockStateProvider(ModBlocks.CORK_LOG.get().getDefaultState()), 
 			new SimpleBlockStateProvider(ModBlocks.CORK_LEAVES.get().getDefaultState()), 
-			new AcaciaFoliagePlacer(FeatureSpread.func_242252_a(2), FeatureSpread.func_242252_a(0)), 
+			new AcaciaFoliagePlacer(FeatureSpread.create(2), FeatureSpread.create(0)), 
 			new ForkyTrunkPlacer(5, 2, 2), new TwoLayerFeature(1, 0, 2)))./*func_236700_a_*/setIgnoreVines().build();
 
 	@Override
