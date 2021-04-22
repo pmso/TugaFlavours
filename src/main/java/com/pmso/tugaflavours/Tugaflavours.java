@@ -7,6 +7,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -16,6 +17,7 @@ import org.apache.logging.log4j.Logger;
 
 import com.pmso.tugaflavours.init.ModBiomes;
 import com.pmso.tugaflavours.init.ModBlocks;
+import com.pmso.tugaflavours.init.ModFluids;
 import com.pmso.tugaflavours.init.ModItems;
 import com.pmso.tugaflavours.init.ModPaintings;
 import com.pmso.tugaflavours.init.ModSounds;
@@ -41,12 +43,13 @@ public class Tugaflavours
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
         
         MOD_EVENT_BUS=FMLJavaModLoadingContext.get().getModEventBus();
-        
-        ModSounds.SOUNDS.register(MOD_EVENT_BUS);
+
         ModItems.ITEMS.register(MOD_EVENT_BUS);
         ModBlocks.BLOCKS.register(MOD_EVENT_BUS);
-        ModPaintings.PAINTING_TYPES.register(MOD_EVENT_BUS);
         ModBiomes.BIOMES.register(MOD_EVENT_BUS);
+        ModFluids.FLUIDS.register(MOD_EVENT_BUS);
+        ModPaintings.PAINTING_TYPES.register(MOD_EVENT_BUS);
+        ModSounds.SOUNDS.register(MOD_EVENT_BUS);
         ModVanillaIntegration.init();
 
         // Register ourselves for server and other game events we are interested in

@@ -11,6 +11,7 @@ import net.minecraft.item.Rarity;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.AxeItem;
+import net.minecraft.item.BucketItem;
 import net.minecraft.item.HoeItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.PickaxeItem;
@@ -63,6 +64,12 @@ public class ModItems {
 			() -> new ArmorItem(ModArmourMaterial.CORK, EquipmentSlotType.FEET,
 					new Item.Properties().group(Tugaflavours.TAB)));
 
+
+	public static final RegistryObject<Item> RED_WINE_BUCKET = ITEMS.register("red_wine_bucket", 
+			()-> new BucketItem(ModFluids.RED_WINE_FLUID, new Item.Properties().group(Tugaflavours.TAB).maxStackSize(1)));
+	//public static final RegistryObject<Item> WHITE_WINE_BUCKET = ITEMS.register("white_wine_bucket", 
+	//		()-> new BucketItem(ModFluids.WHITE_WINE_FLUID_SOURCE, new Item.Properties().group(Tugaflavours.TAB).maxStackSize(1)));
+	
 	// Block Items
 	public static final RegistryObject<Item> CORK_BLOCK_ITEM = ITEMS.register("cork_block",
 			() -> new BlockItemBase(ModBlocks.CORK_BLOCK.get()));
