@@ -1,5 +1,7 @@
 package com.pmso.tugaflavours.client.fluids;
 
+import java.io.Console;
+import java.lang.System.Logger;
 import java.util.Random;
 import javax.annotation.Nullable;
 
@@ -13,6 +15,7 @@ import net.minecraft.block.FlowingFluidBlock;
 import net.minecraft.fluid.FlowingFluid;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.fluid.FluidState;
+import net.minecraft.fluid.Fluids;
 import net.minecraft.item.Item;
 import net.minecraft.particles.IParticleData;
 import net.minecraft.particles.ParticleTypes;
@@ -24,16 +27,25 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.SoundEvents;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.IBlockDisplayReader;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.world.IWorld;
 import net.minecraft.world.IWorldReader;
 import net.minecraft.world.World;
+import net.minecraft.world.biome.BiomeColors;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.fluids.FluidAttributes;
+import net.minecraftforge.fluids.FluidAttributes.Builder;
+import net.minecraftforge.fluids.FluidAttributes.Water;
 import net.minecraftforge.api.distmarker.Dist;
 
 public abstract class RedWineFluid extends FlowingFluid {
 
+	//ResourceLocation still_texture= new ResourceLocation("block/water_still");
+	ResourceLocation still_texture= new ResourceLocation("tugaflavours:blocks/water_still");
+	ResourceLocation flow_texture= new ResourceLocation("tugaflavours:blocks/water_flow");
+	ResourceLocation overlay_texture= new ResourceLocation("block/water_overlay");
+	
 	@Override
 	public Fluid getFlowingFluid()
 	{
@@ -55,12 +67,12 @@ public abstract class RedWineFluid extends FlowingFluid {
 	@Override
 	protected FluidAttributes createAttributes()
 	{
-		return FluidAttributes.Water.builder(
-				new ResourceLocation("block/water_still"),
-				new ResourceLocation("block/water_flow"))
-				.overlay(new ResourceLocation("block/water_overlay"))
-				.translationKey("block.minecraft.water")
-				.color(0xFF3F76E4).build(this);
+		return RedWine.builder(
+				still_texture,
+				flow_texture)
+				.overlay(overlay_texture)
+				.translationKey("block.minecraft.water").color(0x00FFFFFF)
+				.build(this);
 	}
 
 	@OnlyIn(Dist.CLIENT)
@@ -177,4 +189,13 @@ public abstract class RedWineFluid extends FlowingFluid {
 			return true;
 		}
 	}
+	
+	
+	public static class RedWine extends FluidAttributes
+    {
+        protected RedWine(Builder builder, Fluid fluid)
+        {
+            super(builder, fluid);
+        }
+    }
  }
