@@ -63,7 +63,7 @@ public abstract class RedWineFluid extends FlowingFluid {
 				still_texture,
 				flow_texture)
 				.overlay(overlay_texture)
-				.translationKey("block.minecraft.water")
+				.translationKey("block.tugaflavours.red_wine")
 				.build(this);
 	}
 
