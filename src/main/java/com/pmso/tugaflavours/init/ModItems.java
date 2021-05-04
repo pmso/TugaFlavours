@@ -67,8 +67,8 @@ public class ModItems {
 
 	public static final RegistryObject<Item> RED_WINE_BUCKET = ITEMS.register("red_wine_bucket", 
 			()-> new BucketItem(ModFluids.RED_WINE_FLUID, new Item.Properties().group(Tugaflavours.TAB).maxStackSize(1)));
-	//public static final RegistryObject<Item> WHITE_WINE_BUCKET = ITEMS.register("white_wine_bucket", 
-	//		()-> new BucketItem(ModFluids.WHITE_WINE_FLUID_SOURCE, new Item.Properties().group(Tugaflavours.TAB).maxStackSize(1)));
+	public static final RegistryObject<Item> WHITE_WINE_BUCKET = ITEMS.register("white_wine_bucket", 
+			()-> new BucketItem(ModFluids.WHITE_WINE_FLUID, new Item.Properties().group(Tugaflavours.TAB).maxStackSize(1)));
 	
 	// Block Items
 	public static final RegistryObject<Item> CORK_BLOCK_ITEM = ITEMS.register("cork_block",

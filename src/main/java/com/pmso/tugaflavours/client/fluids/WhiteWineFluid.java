@@ -32,28 +32,28 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.fluids.FluidAttributes;
 import net.minecraftforge.api.distmarker.Dist;
 
-public abstract class RedWineFluid extends FlowingFluid {
+public abstract class WhiteWineFluid extends FlowingFluid {
 
-	ResourceLocation still_texture= new ResourceLocation("tugaflavours:blocks/red_wine_still");
-	ResourceLocation flow_texture= new ResourceLocation("tugaflavours:blocks/red_wine_flow");
-	ResourceLocation overlay_texture= new ResourceLocation("block/red_wine_overlay");
+	ResourceLocation still_texture= new ResourceLocation("tugaflavours:blocks/white_wine_still");
+	ResourceLocation flow_texture= new ResourceLocation("tugaflavours:blocks/white_wine_flow");
+	ResourceLocation overlay_texture= new ResourceLocation("block/white_wine_overlay");
 	
 	@Override
 	public Fluid getFlowingFluid()
 	{
-		return ModFluids.RED_WINE_FLUID_FLOWING.get();
+		return ModFluids.WHITE_WINE_FLUID_FLOWING.get();
 	}
 
 	@Override
 	public Fluid getStillFluid()
 	{
-		return ModFluids.RED_WINE_FLUID.get();
+		return ModFluids.WHITE_WINE_FLUID.get();
 	}
 
 	@Override
 	public Item getFilledBucket()
 	{
-		return ModItems.RED_WINE_BUCKET.get();
+		return ModItems.WHITE_WINE_BUCKET.get();
 	}
 
 	@Override
@@ -111,13 +111,13 @@ public abstract class RedWineFluid extends FlowingFluid {
 	@Override
 	public BlockState getBlockState(FluidState state)
 	{
-		return ModBlocks.RED_WINE_BLOCK.get().getDefaultState().with(FlowingFluidBlock.LEVEL, getLevelFromState(state));
+		return ModBlocks.WHITE_WINE_BLOCK.get().getDefaultState().with(FlowingFluidBlock.LEVEL, getLevelFromState(state));
 	}
 
 	@Override
 	public boolean isEquivalentTo(Fluid fluid)
 	{
-		return fluid == ModFluids.RED_WINE_FLUID.get() || fluid == ModFluids.RED_WINE_FLUID_FLOWING.get();
+		return fluid == ModFluids.WHITE_WINE_FLUID.get() || fluid == ModFluids.WHITE_WINE_FLUID_FLOWING.get();
 	}
 
 	@Override
@@ -144,9 +144,8 @@ public abstract class RedWineFluid extends FlowingFluid {
 		return 100.0F;
 	}
 	
-	
 
-	public static class Flowing extends RedWineFluid
+	public static class Flowing extends WhiteWineFluid
 	{
 		@Override
 		protected void fillStateContainer(StateContainer.Builder<Fluid, FluidState> builder)
@@ -168,7 +167,7 @@ public abstract class RedWineFluid extends FlowingFluid {
 		}
 	}
 
-	public static class Source extends RedWineFluid
+	public static class Source extends WhiteWineFluid
 	{
 		@Override
 		public int getLevel(FluidState p_207192_1_)

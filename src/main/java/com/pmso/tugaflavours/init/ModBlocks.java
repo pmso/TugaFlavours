@@ -1,17 +1,16 @@
 package com.pmso.tugaflavours.init;
 
-import com.ibm.icu.impl.number.Properties;
 import com.pmso.tugaflavours.Tugaflavours;
 import com.pmso.tugaflavours.client.blocks.DishBlock;
 import com.pmso.tugaflavours.client.blocks.FrancesinhaBlock;
 import com.pmso.tugaflavours.client.blocks.ModSaplingBlock;
 import com.pmso.tugaflavours.client.blocks.PortuguesePortalBlock;
-import com.pmso.tugaflavours.client.blocks.RedWineBlock;
 import com.pmso.tugaflavours.client.blocks.cork.CorkBlock;
 import com.pmso.tugaflavours.client.blocks.cork.CorkLeaves;
 import com.pmso.tugaflavours.client.blocks.cork.CorkLogBlock;
 import com.pmso.tugaflavours.client.blocks.cork.StrippedCorkLogBlock;
 import com.pmso.tugaflavours.client.fluids.RedWineFluid;
+import com.pmso.tugaflavours.client.fluids.WhiteWineFluid;
 import com.pmso.tugaflavours.world.feature.CorkTree;
 
 import net.minecraft.block.AbstractBlock;
@@ -27,8 +26,6 @@ import net.minecraft.block.StairsBlock;
 import net.minecraft.block.WoodButtonBlock;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
-import net.minecraft.fluid.FlowingFluid;
-import net.minecraft.fluid.Fluids;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -91,20 +88,9 @@ public class ModBlocks {
 
 	// Fluid Blocks
 
-	public static final RegistryObject<Block> RED_WINE_BLOCK=BLOCKS.register("red_wine_block",
+	public static final RegistryObject<FlowingFluidBlock> RED_WINE_BLOCK=BLOCKS.register("red_wine_block",
 			()->new FlowingFluidBlock(RedWineFluid.Source::new, AbstractBlock.Properties.create(Material.WATER).doesNotBlockMovement().hardnessAndResistance(100.0F).noDrops()));
-	//public static final RegistryObject<FlowingFluidBlock> WHITE_WINE_BLOCK=BLOCKS.register("white_wine_block", 
-		//	 () -> new FlowingFluidBlock((FlowingFluid) ModFluids.WHITE_WINE_FLUID_SOURCE.get(), fluidProps()));
-	
-	
-	private static final Block.Properties prop()
-	{
-		return prop(Material.ROCK);
-	}
-
-	private static final Block.Properties prop(Material mat)
-	{
-		return Block.Properties.create(mat).hardnessAndResistance(-1.0F, 6000000.0F);
-	}
+	public static final RegistryObject<FlowingFluidBlock> WHITE_WINE_BLOCK=BLOCKS.register("white_wine_block", 
+			()->new FlowingFluidBlock(WhiteWineFluid.Source::new, AbstractBlock.Properties.create(Material.WATER).doesNotBlockMovement().hardnessAndResistance(100.0F).noDrops()));
 	
 }
