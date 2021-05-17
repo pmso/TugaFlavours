@@ -4,9 +4,9 @@ import com.pmso.tugaflavours.Tugaflavours;
 
 import net.minecraft.item.Item;
 
-public class ItemBase extends Item{
+public class ModItem extends Item{
 
-	public ItemBase() {
+	public ModItem() {
 		super(new Item.Properties().group(Tugaflavours.TAB));
 	}
 
