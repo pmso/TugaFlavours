@@ -1,6 +1,6 @@
 {
 "itemGroup.tugaFlavoursTab":"Tuga Flavours",
-"tugaflavours.alentejo_biome":"Alentejo",
+"biome.tugaflavours.alentejo_biome":"Alentejo",
 
 "item.tugaflavours.cork":"Cork",
 "block.tugaflavours.portuguese_portal_block":"Portuguese Portal",
@@ -76,5 +76,8 @@
 "tugaflavour.entry.cork_shovel":"Shovel good for kids",
 "tugaflavour.entry.cork_hoe":"Hoe good for kids",
 
-"tugaflavour.entry.alentejo0":"In the Alentejo biome, you can find cork trees."
+"tugaflavour.entry.alentejo0":"In the Alentejo biome, you can find cork trees.",
+
+"key.categories.tugaflavours":"TugaFlavours",
+"key.item_desc":"Item Descriptions"
 }

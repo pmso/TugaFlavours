@@ -1,13 +1,9 @@
 package com.pmso.tugaflavours.client.blocks;
 
-import java.lang.System.Logger;
 import java.util.Random;
 import java.util.stream.Collectors;
 
-import com.pmso.tugaflavours.Tugaflavours;
 import com.pmso.tugaflavours.init.ModBlocks;
-import com.pmso.tugaflavours.util.TugaFlavoursTabs;
-
 import net.minecraft.world.gen.Heightmap;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -17,17 +13,13 @@ import net.minecraft.block.material.Material;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
-import net.minecraft.item.AxeItem;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.particles.RedstoneParticleData;
 import net.minecraft.server.MinecraftServer;
-import net.minecraft.state.BooleanProperty;
 import net.minecraft.state.IntegerProperty;
 import net.minecraft.state.StateContainer;
-import net.minecraft.state.StateContainer.Builder;
-import net.minecraft.state.properties.BlockStateProperties;
 import net.minecraft.util.ActionResultType;
 import net.minecraft.util.Direction;
 import net.minecraft.util.Hand;
@@ -40,7 +32,6 @@ import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.common.util.ITeleporter;
 
 public class PortuguesePortalBlock extends Block {
 
@@ -150,11 +141,11 @@ public class PortuguesePortalBlock extends Block {
 			BlockPos blockpos = worldIn.offset(direction);
 			if (!world.getBlockState(blockpos).isOpaqueCube(world, blockpos)) {
 				Direction.Axis direction$axis = direction.getAxis();
-				double d1 = direction$axis == Direction.Axis.X ? 0.5D + 0.5625D * (double) direction.getXOffset()
+				double d1 = direction$axis == Direction.Axis.X ? 0.5D + d0 * (double) direction.getXOffset()
 						: (double) random.nextFloat();
-				double d2 = direction$axis == Direction.Axis.Y ? 0.5D + 0.5625D * (double) direction.getYOffset()
+				double d2 = direction$axis == Direction.Axis.Y ? 0.5D + d0 * (double) direction.getYOffset()
 						: (double) random.nextFloat();
-				double d3 = direction$axis == Direction.Axis.Z ? 0.5D + 0.5625D * (double) direction.getZOffset()
+				double d3 = direction$axis == Direction.Axis.Z ? 0.5D + d0 * (double) direction.getZOffset()
 						: (double) random.nextFloat();
 				world.addParticle(RedstoneParticleData.REDSTONE_DUST, (double) worldIn.getX() + d1,
 						(double) worldIn.getY() + d2, (double) worldIn.getZ() + d3, 0.0D, 0.0D, 0.0D);

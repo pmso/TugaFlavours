@@ -7,7 +7,6 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -19,6 +18,7 @@ import com.pmso.tugaflavours.init.ModBiomes;
 import com.pmso.tugaflavours.init.ModBlocks;
 import com.pmso.tugaflavours.init.ModFluids;
 import com.pmso.tugaflavours.init.ModItems;
+import com.pmso.tugaflavours.init.ModKeyBindings;
 import com.pmso.tugaflavours.init.ModPaintings;
 import com.pmso.tugaflavours.init.ModSounds;
 import com.pmso.tugaflavours.init.ModVanillaIntegration;
@@ -68,6 +68,7 @@ public class Tugaflavours
 
     private void doClientStuff(final FMLClientSetupEvent event) {
         // do something that can only be done on the client
+    	ModKeyBindings.register();
     }
 
     
