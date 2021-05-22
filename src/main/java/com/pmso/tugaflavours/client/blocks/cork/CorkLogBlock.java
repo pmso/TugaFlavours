@@ -1,6 +1,5 @@
 package com.pmso.tugaflavours.client.blocks.cork;
 
-import java.util.Random;
 import com.pmso.tugaflavours.init.ModBlocks;
 import com.pmso.tugaflavours.init.ModItems;
 
@@ -44,8 +43,8 @@ public class CorkLogBlock extends RotatedPillarBlock{
 			
 			stack.damageItem(1, player, playerA -> playerA.sendBreakAnimation(handIn));
 			
-			Random random=new Random();
-			int qtyDrop=random.nextInt(3)+1;
+			
+			int qtyDrop=worldIn.getRandom().nextInt(3)+1;
 			
 			if (!player.inventory.addItemStackToInventory(new ItemStack(ModItems.CORK.get(), qtyDrop))) {
 				

@@ -5,6 +5,8 @@ import com.pmso.tugaflavours.client.blocks.DishBlock;
 import com.pmso.tugaflavours.client.blocks.FrancesinhaBlock;
 import com.pmso.tugaflavours.client.blocks.ModSaplingBlock;
 import com.pmso.tugaflavours.client.blocks.PortuguesePortalBlock;
+import com.pmso.tugaflavours.client.blocks.RedGrapeBlock;
+import com.pmso.tugaflavours.client.blocks.WhiteGrapeBlock;
 import com.pmso.tugaflavours.client.blocks.cork.CorkBlock;
 import com.pmso.tugaflavours.client.blocks.cork.CorkLeaves;
 import com.pmso.tugaflavours.client.blocks.cork.CorkLogBlock;
@@ -82,6 +84,11 @@ public class ModBlocks {
 
 	public static final RegistryObject<Block> FRANCESINHA_BLOCK = BLOCKS.register("francesinha_block",
 			FrancesinhaBlock::new);
+
+	public static final RegistryObject<Block> RED_GRAPE_BLOCK = BLOCKS.register("red_grape_block",
+			RedGrapeBlock::new);
+	public static final RegistryObject<Block> WHITE_GRAPE_BLOCK = BLOCKS.register("white_grape_block",
+			WhiteGrapeBlock::new);
 	
 	public static final RegistryObject<Block> PORTUGUESE_PORTAL_BLOCK=BLOCKS.register("portuguese_portal_block", PortuguesePortalBlock::new);
 	

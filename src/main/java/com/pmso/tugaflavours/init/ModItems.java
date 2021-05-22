@@ -2,6 +2,7 @@ package com.pmso.tugaflavours.init;
 
 import com.pmso.tugaflavours.Tugaflavours;
 import com.pmso.tugaflavours.client.blocks.BlockItemBase;
+import com.pmso.tugaflavours.client.items.GrapeItem;
 import com.pmso.tugaflavours.client.items.ModFoodItem;
 import com.pmso.tugaflavours.client.items.ModItem;
 import com.pmso.tugaflavours.client.items.ModMusicDiscItem;
@@ -30,8 +31,8 @@ public class ModItems {
 	// Items
 	public static final RegistryObject<Item> TUGA_COD = ITEMS.register("tuga_cod", ModItem::new);
 	public static final RegistryObject<Item> DRIED_COD = ITEMS.register("dried_cod", ModItem::new);
-	public static final RegistryObject<Item> RED_GRAPES = ITEMS.register("red_grapes", ()->new ModFoodItem(1, 0.5f));
-	public static final RegistryObject<Item> WHITE_GRAPES = ITEMS.register("white_grapes", ()->new ModFoodItem(1, 0.5f));
+	public static final RegistryObject<Item> RED_GRAPES = ITEMS.register("red_grapes", ()->new GrapeItem(1, 0.5f));
+	public static final RegistryObject<Item> WHITE_GRAPES = ITEMS.register("white_grapes", ()->new GrapeItem(1, 0.5f));
 	public static final RegistryObject<Item> CORK = ITEMS.register("cork", ModItem::new);
 
 	// Tools
@@ -122,8 +123,13 @@ public class ModItems {
 
 	public static final RegistryObject<Item> FRANCESINHA_ITEM = ITEMS.register("francesinha_block",
 			() -> new BlockItemBase(ModBlocks.FRANCESINHA_BLOCK.get()));
-
+	
 	// Music Disc Item
 	public static final RegistryObject<Item> HINO_MUSIC_DISC = ITEMS.register("hino_disc",
 			() -> new ModMusicDiscItem(15, ModSounds.LAZY_HINO_MUSIC.get(), new Item.Properties().group(Tugaflavours.TAB).maxStackSize(1).rarity(Rarity.RARE)));
+	
+	
+//FOR TESTING PURPOSES!!!
+	public static final RegistryObject<Item> RED_GRAPE_BLOCK_ITEM = ITEMS.register("red_grape_block",
+			() -> new BlockItemBase(ModBlocks.RED_GRAPE_BLOCK.get()));
 }
