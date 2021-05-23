@@ -3,7 +3,6 @@ package com.pmso.tugaflavours.init;
 import com.pmso.tugaflavours.Tugaflavours;
 import com.pmso.tugaflavours.client.blocks.BlockItemBase;
 import com.pmso.tugaflavours.client.items.GrapeItem;
-import com.pmso.tugaflavours.client.items.ModFoodItem;
 import com.pmso.tugaflavours.client.items.ModItem;
 import com.pmso.tugaflavours.client.items.ModMusicDiscItem;
 import com.pmso.tugaflavours.util.enums.ModArmourMaterial;
@@ -29,11 +28,11 @@ public class ModItems {
 			Tugaflavours.MOD_ID);
 
 	// Items
-	public static final RegistryObject<Item> TUGA_COD = ITEMS.register("tuga_cod", ModItem::new);
-	public static final RegistryObject<Item> DRIED_COD = ITEMS.register("dried_cod", ModItem::new);
-	public static final RegistryObject<Item> RED_GRAPES = ITEMS.register("red_grapes", ()->new GrapeItem(1, 0.5f));
-	public static final RegistryObject<Item> WHITE_GRAPES = ITEMS.register("white_grapes", ()->new GrapeItem(1, 0.5f));
-	public static final RegistryObject<Item> CORK = ITEMS.register("cork", ModItem::new);
+	public static final RegistryObject<ModItem> TUGA_COD = ITEMS.register("tuga_cod", ModItem::new);
+	public static final RegistryObject<ModItem> DRIED_COD = ITEMS.register("dried_cod", ModItem::new);
+	public static final RegistryObject<GrapeItem> RED_GRAPES = ITEMS.register("red_grapes", ()->new GrapeItem(1, 0.5f));
+	public static final RegistryObject<GrapeItem> WHITE_GRAPES = ITEMS.register("white_grapes", ()->new GrapeItem(1, 0.5f));
+	public static final RegistryObject<ModItem> CORK = ITEMS.register("cork", ModItem::new);
 
 	// Tools
 	public static final RegistryObject<SwordItem> CORK_SWORD = ITEMS.register("cork_sword",

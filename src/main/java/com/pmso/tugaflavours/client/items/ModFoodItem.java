@@ -6,10 +6,7 @@ import com.pmso.tugaflavours.Tugaflavours;
 import com.pmso.tugaflavours.init.ModKeyBindings;
 import com.pmso.tugaflavours.util.KeyboardUtil;
 
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.resources.I18n;
 import net.minecraft.client.util.ITooltipFlag;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Food;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

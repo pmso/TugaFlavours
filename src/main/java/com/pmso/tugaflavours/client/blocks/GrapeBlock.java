@@ -1,7 +1,6 @@
 package com.pmso.tugaflavours.client.blocks;
 
-import com.pmso.tugaflavours.init.ModItems;
-
+import com.pmso.tugaflavours.client.items.GrapeItem;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.SoundType;
@@ -10,18 +9,26 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.entity.item.ItemEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.CompoundNBT;
+import net.minecraft.state.EnumProperty;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IWorld;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.RegistryObject;
 
-public class WhiteGrapeBlock extends Block{
+public class GrapeBlock extends Block{
+	
+	//public static final EnumProperty<T>
 
-	public WhiteGrapeBlock() {
+	private RegistryObject<GrapeItem> grape;
+	
+	public GrapeBlock(RegistryObject<GrapeItem> redGrapes) {
 		super(Block.Properties.create(Material.LEAVES)
 				.zeroHardnessAndResistance()
 				.sound(SoundType.CROP)
 				.notSolid()
 				.harvestLevel(1));
+		
+		this.grape=redGrapes;
 	}
 
 	
@@ -32,7 +39,7 @@ public class WhiteGrapeBlock extends Block{
 		String biome=Minecraft.getInstance().world.getBiome(pos).getRegistryName().toString().replace(":", ".");
 		
 		
-		ItemStack stack= new ItemStack(ModItems.WHITE_GRAPES.get(), 1);
+		ItemStack stack= new ItemStack(this.grape.get(), 1);
 		
 		CompoundNBT nbt;
 	    if (stack.hasTag())
