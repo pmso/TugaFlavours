@@ -1,7 +1,5 @@
 {
   "variants": {
-    "":   { "model": "tugaflavours:block/red_grape_block" },
-    "color=red":   { "model": "tugaflavours:block/red_grape_block" },
-    "color=white":   { "model": "tugaflavours:block/white_grape_block" }
+    "":   { "model": "tugaflavours:block/red_grape_block" }
   }
 }

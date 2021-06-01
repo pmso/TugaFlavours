@@ -19,6 +19,7 @@ public class ClientEventBusSubscriber {
 	public static void clientSetup(FMLClientSetupEvent event) {
 		RenderTypeLookup.setRenderLayer(ModBlocks.CORK_SAPLING.get(), RenderType.getCutout());
 		RenderTypeLookup.setRenderLayer(ModBlocks.RED_GRAPE_BLOCK.get(), RenderType.getCutout());
+		RenderTypeLookup.setRenderLayer(ModBlocks.WHITE_GRAPE_BLOCK.get(), RenderType.getCutout());
 		
 		RenderTypeLookup.setRenderLayer(ModFluids.RED_WINE_FLUID.get(), RenderType.getTranslucent());
 		RenderTypeLookup.setRenderLayer(ModFluids.RED_WINE_FLUID_FLOWING.get(), RenderType.getTranslucent());

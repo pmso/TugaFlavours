@@ -10,15 +10,23 @@ import net.minecraft.entity.item.ItemEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.state.EnumProperty;
+import net.minecraft.state.IntegerProperty;
+import net.minecraft.state.properties.BlockStateProperties;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.shapes.ISelectionContext;
+import net.minecraft.util.math.shapes.VoxelShape;
+import net.minecraft.world.IBlockReader;
 import net.minecraft.world.IWorld;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.RegistryObject;
 
 public class GrapeBlock extends Block{
 	
-	//public static final EnumProperty<T>
+	public static final IntegerProperty AGE = BlockStateProperties.AGE_0_3;
 
+
+	protected static VoxelShape SHAPE = Block.makeCuboidShape(4.0D, 4.0D, 4.0D, 12.0D, 16.0D, 12.0D);
+	
 	private RegistryObject<GrapeItem> grape;
 	
 	public GrapeBlock(RegistryObject<GrapeItem> redGrapes) {
@@ -64,6 +72,10 @@ public class GrapeBlock extends Block{
 	         itementity.setDefaultPickupDelay();
 	         worldIn.addEntity(itementity);
 	      }
-
 	}
+	
+	@Override
+    public VoxelShape getShape(BlockState state, IBlockReader worldIn, BlockPos pos, ISelectionContext context) {
+        return SHAPE;
+    }
 }
