@@ -28,5 +28,11 @@ public class DrunkEffect extends Effect {
 		// TODO Auto-generated method stub
 		return false;
 	}
+	
+	@Override
+	public boolean isReady(int duration, int amplifier) {
+		// TODO Auto-generated method stub
+		return true;
+	}
 
 }
