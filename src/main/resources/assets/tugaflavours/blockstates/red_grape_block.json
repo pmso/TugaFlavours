@@ -1,5 +1,7 @@
 {
   "variants": {
-    "":   { "model": "tugaflavours:block/red_grape_block" }
+      "age=0": { "model": "tugaflavours:block/red_grape_block"},
+      "age=1": { "model": "tugaflavours:block/red_grape_block"},
+      "age=2": { "model": "tugaflavours:block/red_grape_block_age2" }    
   }
 }

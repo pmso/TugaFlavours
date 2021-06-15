@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench, a free, modern block model editor by JannisX11",
 	"ambientocclusion": false,
     "textures": {
-        "0": "tugaflavours:items/green_grapes",
-        "particle": "tugaflavours:items/green_grapes"
+        "0": "tugaflavours:items/red_grapes",
+        "particle": "tugaflavours:items/red_grapes"
     },
 	"elements": [
 		{
